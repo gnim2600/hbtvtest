@@ -1,0 +1,617 @@
+@charset "UTF-8";
+
+@import 'base.scss';
+
+body {
+  width: 100%;
+  //首页主体
+  #main {
+    @include contentSetup(100%, 2300px);
+    #cjy {
+      @include contentSetup(100%, 696px);
+      background-color: #e9e9e9;
+      #wtProNav {
+        @include contentSetup($contentWidth, 20px);
+        padding-top: 20px;
+        border-bottom: 2px solid #939393;
+        padding-bottom: 4px;
+        ul {
+          margin-left: 6px;
+          li {
+            float: left;
+            width: 190px;
+            margin-right: 95px;
+            p {
+              font-family: 宋体;
+              font-size: 12px;
+              color: #5c5c5c;
+              span {
+                font-size: 14px;
+                color: #3d6bba;
+                margin-right: 9px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .content {
+        padding-top: 12px;
+        #hotNews {
+          @include contentSetup($contentWidth, 360px);
+          #hotFollow {
+            width: 565px;
+            height: 360px;
+            background-color: #dddddd;
+            float: left;
+            .slider {
+              height: 316px;
+              overflow: hidden;
+              img {
+                width: 565px;
+              }
+            }
+            .banner {
+              height: 44px;
+              p {
+                font-weight: bold;
+                line-height: 44px;
+                text-align: left;
+                text-indent: 15px;
+                span {
+                  display: block;
+                  width: 100px;
+                  background-color: #3d6bba;
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  text-indent: 0px;
+                }
+              }
+            }
+          }
+          #hotList {
+            width: 565px;
+            float: right;
+            .listContent {
+              background-color: #dddddd;
+              height: 100px;
+              border-bottom: 1px solid #3d6bba;
+              margin-bottom: 28px;
+              padding-left: 15px;
+              padding-right: 15px;
+
+              .title {
+                width: 100%;
+                padding-top: 10px;
+                overflow: hidden;
+                font-size: 17px;
+                .name {
+                  float: left;
+                  p {
+                    font-family: "Microsoft YaHei UI";
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #323232;
+                  }
+                }
+                .more {
+                  float: right;
+                  font-size: 14px;
+                  margin-right: 20px;
+                }
+              }
+              .content {
+                font-size: 12px;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                clear: both;
+                ul {
+                  margin-top: 15px;
+                  li {
+                    height: 12px;
+                    margin-bottom: 12px;
+
+                    $listPW: 240px;
+                    p {
+                      text-align: center;
+                    }
+                    .listLeft {
+                      float: left;
+                      width: $listPW;
+                      border-right: 1px solid;
+                      padding-right: 20px;
+                    }
+                    .listRight {
+                      width: $listPW;
+                      float: left;
+                      padding-left: 20px;
+                    }
+                  }
+                }
+                .desc {
+                  margin-top: 10px;
+                  width: 550px;
+                  line-height: 18px;
+                  text-indent: 2em;
+                }
+              }
+            }
+          }
+        }
+        #routineNews {
+          margin-top: 30px;
+          @include contentSetup($contentWidth, 230px);
+          #fusionNews {
+            @include contentSetup(565px, 230px);
+            float: left;
+            background-image: url(../img/fusionBg.jpg);
+            .title {
+              width: 380px;
+              height: 35px;
+              padding-top: 14px;
+              padding-left: 14px;
+              border-bottom: 1px solid #3d6bba;
+              .name {
+                width: 165px;
+                float: left;
+                img {
+                  display: block;
+                  width: 51px;
+                  height: 22px;
+                  float: left;
+                }
+
+                p {
+                  display: block;
+                  width: 90px;
+                  font-size: 16px;
+                  float: right;
+                  font-weight: bold;
+                  color: #4276cf;
+                }
+              }
+              .more {
+                float: right;
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+            .content {
+              ul {
+                margin-left: 10px;
+                li {
+                  width: 380px;
+                  height: 22px;
+                  margin-bottom: 10px;
+                  img {
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    float: left;
+                  }
+                  p {
+                    padding-top: 2px;
+                    display: block;
+                    width: 348px;
+                    float: right;
+                    font-size: 14px;
+                    font-family: 宋体;
+                    line-height: 22px;
+                  }
+                }
+              }
+            }
+          }
+          #cjyNews {
+            @include contentSetup(565px, 230px);
+            float: right;
+            background-image: url(../img/cjyNewsBg.jpg);
+            .title {
+              width: 380px;
+              height: 35px;
+              padding-top: 14px;
+              padding-left: 14px;
+              border-bottom: 1px solid #3d6bba;
+              .name {
+                width: 165px;
+                float: left;
+                img {
+                  display: block;
+                  width: 85px;
+                  height: 27px;
+                  float: left;
+                }
+
+              }
+              .more {
+                float: right;
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+            .content {
+              ul {
+                margin-left: 5px;
+                li {
+                  width: 400px;
+                  height: 22px;
+                  margin-bottom: 10px;
+                  p {
+                    padding-top: 2px;
+                    display: block;
+                    width: 400px;
+                    font-size: 14px;
+                    font-family: 宋体;
+                    line-height: 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+    #wt {
+      @include contentSetup($contentWidth, 1260px);
+      margin-top: 10px;
+      //电视广播
+      #tvBc {
+        height: 313px;
+        .title {
+          height: 35px;
+          @include wtTitle();
+          .channelNav {
+            ul {
+              display: block;
+              width: 630px;
+              height: 16px;
+              float: right;
+              li {
+                float: left;
+                margin-right: 8px;
+                :hover {
+                  text-decoration: underline;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+        .content {
+          @include contentSetup(1200px, 268px);
+          margin-top: 5px;
+          li {
+            width: 266px;
+            height: 268px;
+            float: left;
+            margin-right: 29px;
+            border: 1px solid #d3d3d3;
+            background-color: #eeeeee;
+            position: relative;
+            .show {
+              height: 226px;
+              img {
+                display: block;
+                height: 150px;
+                width: 266px;
+              }
+              p {
+                width: 227px;
+                height: 56px;
+                font-size: 12px;
+                line-height: 20px;
+                font-family: 宋体;
+                margin: 20px;
+                margin-top: 10px;
+              }
+            }
+            .category {
+              margin-top: 5px;
+              width: 200px;
+              height: 26px;
+              margin-left: -100px;
+              border-top: 2px solid #8b8b8b;
+              position: absolute;
+              left: 50%;
+              p {
+                text-align: center;
+                font-size: 14px;
+                color: #8b8b8b;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      // 主持人&湖北IPTV
+      #zhuchi-iptv {
+        margin-top: 10px;
+        @include contentSetup(100%, 170px);
+        #zhuchi {
+          width: 862px;
+          float: left;
+          .title {
+            @include wtTitle();
+          }
+          .content {
+            height: 136px;
+            li {
+              float: left;
+              margin-right: 29px;
+              height: 136px;
+              background-color: #f3f3f3;
+              img {
+                width: 169px;
+                height: 99px;
+                display: block;
+              }
+              p {
+                font-size: 14px;
+                text-align: center;
+                line-height: 37px;
+              }
+
+            }
+            //第一个元素
+            .first {
+              img {
+                width: 268px;
+                height: 99px;
+                display: block;
+              }
+            }
+            //最后一个元素
+            .last {
+              margin-right: 0px;
+            }
+          }
+        }
+        #iptv {
+          width: 268px;
+          float: right;
+          .title {
+            @include wtTitle();
+          }
+          .content {
+            height: 136px;
+            background-color: #f3f3f3;
+            img {
+              width: 268px;
+              height: 99px;
+              display: block;
+            }
+            p {
+              font-size: 14px;
+              text-align: center;
+              line-height: 37px;
+            }
+          }
+        }
+      }
+      // hbtv专区&节目推荐
+      #hbtv-tvRcmd {
+        //hbtv专区
+        margin-top: 15px;
+        @include contentSetup(100%, 348px);
+        #hbtv {
+          float: left;
+          @include contentSetup(862px, 348px);
+          .title {
+            @include wtTitle();
+          }
+          .content {
+            .topList {
+              width: 266px;
+              height: 311px;
+              float: left;
+              background-color: #f3f3f3;
+              border: 1px solid #e5e5e5;
+              margin-right: 29px;
+              img {
+                width: inherit;
+                height: 152px;
+              }
+              p {
+                font-size: 14px;
+                margin: 10px;
+                line-height: 20px;
+              }
+            }
+            .list {
+              width: 565px;
+              float: right;
+              li {
+                float: left;
+                margin-right: 29px;
+                margin-bottom: 17px;
+                height: 148px;
+                width: 169px;
+                overflow: hidden;
+                background-color: #f3f3f3;
+                img {
+                  width: 169px;
+                  height: 99px;
+                  display: block;
+                }
+                p {
+                  font-size: 12px;
+                  line-height: 16px;
+
+                  margin: 10px 5px 5px 5px;
+                }
+
+              }
+              .last {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+        //节目推荐
+        #tvRcmd {
+          @include wtRightSide();
+        }
+      }
+      //  热播栏目&热搜资讯
+      #hotTv-hotInfo {
+        @include contentSetup(100%, 348px);
+        margin-top: 15px;
+        #hotTv {
+          @include contentSetup(862px, 348px);
+          float: left;
+          .title {
+            @include wtTitle();
+          }
+          .content {
+            @include contentSetup(100%, 313px);
+            float: left;
+            li {
+              float: left;
+              width: 169px;
+              height: 148px;
+              margin-right: 29px;
+              margin-bottom: 17px;
+              overflow: hidden;
+              img {
+                width: inherit;
+                height: 148px;
+              }
+            }
+            .first {
+              width: 268px;
+              img {
+                width: inherit;
+              }
+            }
+            .last {
+              margin-right: 0px;
+            }
+            .banner {
+              width: 100%;
+              height: 45px;
+              position: relative;
+              top: -45px;
+              background-image: url(../img/bannerBG.png);
+              background-repeat: repeat;
+              p {
+                font-size: 13px;
+                line-height: 18px;
+                padding-top: 3px;
+                margin: 2px;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+        #hotInfo {
+          @include wtRightSide();
+        }
+      }
+    }
+    //  合作专区
+    #hz-AD {
+      @include contentSetup($contentWidth, 185px);
+      margin-top: 15px;
+      #hz {
+        @include contentSetup(892px, 185px);
+        background-color: #f0eeee;
+        float: left;
+        .hzTitle {
+          float: left;
+          width: 67px;
+          height: 185px;
+          background-color: #3d6bba;
+          position: relative;
+          .name {
+            width: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            p {
+              color: white;
+              width: 24px;
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+          img {
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+        .content {
+          li {
+            float: left;
+            margin-left: 25px;
+            margin-top: 10px;
+            .title {
+              width: 100%;
+              clear: both;
+              background-color: transparent;
+              @include wtTitle();
+            }
+            .content {
+              background-color: #727171;
+              img {
+                display: block;
+              }
+              p {
+                text-align: center;
+                line-height: 30px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      #AD {
+        float: right;
+        width: 268px;
+        height: 185px;
+      }
+    }
+    #frLink {
+      margin-top: 25px;
+      @include contentSetup($contentWidth, 62px);
+      border: 2px solid #b8b8b8;
+      .title {
+        margin-top: 7px;
+        @include contentSetup(64px, 50px);
+        border-right: 1px solid #b8b8b8;
+        float: left;
+        .name {
+          @include contentSetup(41px, 41px);
+          p {
+            line-height: 24px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-family: "Microsoft YaHei UI";
+            text-align: center;
+          }
+        }
+      }
+      .content {
+        margin-top: 7px;
+        @include contentSetup(1075px, 50px);
+        float: right;
+        li {
+          float: left;
+          margin-right: 14px;
+          p {
+            line-height: 16px;
+            font-size: 12px;
+            color: #6c6c6c;
+          }
+        }
+      }
+    }
+  }
+}

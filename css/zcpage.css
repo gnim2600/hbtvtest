@@ -1,0 +1,491 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体; }
+
+html {
+  overflow-x: hidden; }
+
+#top {
+  width: 1160px;
+  height: 53px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  margin-top: 20px; }
+  #top #hbLogoA {
+    width: 437px;
+    height: 36px;
+    float: left; }
+  #top #search {
+    width: 227px;
+    height: 28px;
+    float: left;
+    margin-left: 220px;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius: 6px;
+    /* Gecko browsers */
+    -webkit-border-radius: 6px;
+    /* Webkit browsers */
+    border-radius: 6px;
+    /* W3C syntax */
+    margin-top: 5px; }
+    #top #search input {
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px;
+      width: 180px;
+      border: none;
+      height: 20px; }
+    #top #search img {
+      display: block;
+      margin-top: 5px;
+      float: right;
+      margin-right: 10px; }
+  #top #cjyAPP, #top #weixin {
+    width: 96px;
+    height: 41px;
+    float: left;
+    margin-left: 65px; }
+    #top #cjyAPP img, #top #weixin img {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 39px; }
+    #top #cjyAPP .name, #top #weixin .name {
+      float: right;
+      width: 45px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 5px; }
+      #top #cjyAPP .name p, #top #weixin .name p {
+        font-size: 13px; }
+  #top #weixin {
+    margin-left: 16px; }
+
+#nav {
+  width: 100%;
+  height: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #3d6bba; }
+  #nav ul {
+    width: 1160px;
+    height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    display: block; }
+    #nav ul li {
+      float: left;
+      display: block;
+      margin-right: 13px; }
+      #nav ul li p {
+        color: white;
+        font-size: 14px;
+        line-height: 36px;
+        font-family: "Microsoft YaHei UI Light"; }
+    #nav ul .OA {
+      margin-left: 90px;
+      margin-right: 14px;
+      border-right: 1px solid #2e56a6;
+      padding-right: 14px; }
+
+#footer, #playFooter {
+  width: 1160px;
+  height: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #footer #ourLink, #playFooter #ourLink {
+    padding-bottom: 20px;
+    width: 770px;
+    height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #ourLink li, #playFooter #ourLink li {
+      float: left;
+      width: 70px;
+      border-right: 1px solid; }
+      #footer #ourLink li p, #playFooter #ourLink li p {
+        font-size: 12px;
+        text-align: center; }
+    #footer #ourLink .last, #playFooter #ourLink .last {
+      border: none; }
+  #footer .hrLine, #playFooter .hrLine {
+    border-top: 1px solid #e0e0e0; }
+  #footer #info, #playFooter #info {
+    margin-top: 30px;
+    width: 750px;
+    height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 10px; }
+    #footer #info img, #playFooter #info img {
+      display: block;
+      width: 253px;
+      height: 65px;
+      float: left; }
+    #footer #info .infoTEXT, #playFooter #info .infoTEXT {
+      width: 460px;
+      float: right;
+      letter-spacing: 1px; }
+      #footer #info .infoTEXT p, #playFooter #info .infoTEXT p {
+        font-size: 12px;
+        line-height: 20px; }
+  #footer #wangjian, #playFooter #wangjian {
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 638px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #wangjian img, #playFooter #wangjian img {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+    #footer #wangjian .last, #playFooter #wangjian .last {
+      margin-right: 0px; }
+  #footer #beian, #playFooter #beian {
+    margin-top: 20px;
+    padding-right: 30px;
+    width: 250px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #beian img, #playFooter #beian img {
+      display: block;
+      float: left; }
+    #footer #beian p, #playFooter #beian p {
+      display: block;
+      font-size: 12px;
+      font-family: "Microsoft YaHei UI Light";
+      line-height: 25px;
+      float: left;
+      margin-left: 10px; }
+
+#playFooter {
+  height: 180px; }
+  #playFooter #ourLink li {
+    border-color: white; }
+    #playFooter #ourLink li p {
+      color: white; }
+  #playFooter #info img {
+    width: 251px;
+    height: 38px; }
+  #playFooter #info .infoTEXT p {
+    color: white; }
+
+#radioNav {
+  margin-top: 12px;
+  width: 1160px;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #radioNav .ch1 {
+    border-color: #05b4fb; }
+    #radioNav .ch1 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav .ch2 {
+    border-color: #d24a4a; }
+    #radioNav .ch2 .wxBanner {
+      background-color: #d24a4a; }
+  #radioNav .ch3 {
+    border-color: #92cf9a; }
+    #radioNav .ch3 .wxBanner {
+      background-color: #92cf9a; }
+  #radioNav .ch4 {
+    border-color: #efc703; }
+    #radioNav .ch4 .wxBanner {
+      background-color: #efc703; }
+  #radioNav .ch5 {
+    border-color: #7fcef4; }
+    #radioNav .ch5 .wxBanner {
+      background-color: #7fcef4; }
+  #radioNav .ch6 {
+    border-color: #a7509a; }
+    #radioNav .ch6 .wxBanner {
+      background-color: #a7509a; }
+  #radioNav .ch7 {
+    border-color: #e3e949; }
+    #radioNav .ch7 .wxBanner {
+      background-color: #e3e949; }
+  #radioNav .ch8 {
+    border-color: #86be0d; }
+    #radioNav .ch8 .wxBanner {
+      background-color: #86be0d; }
+  #radioNav .ch9 {
+    border-color: #de4700; }
+    #radioNav .ch9 .wxBanner {
+      background-color: #de4700; }
+  #radioNav .ch10 {
+    border-color: #05b4fb; }
+    #radioNav .ch10 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav li {
+    float: left;
+    width: 116px;
+    height: 30px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid; }
+    #radioNav li p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px; }
+
+#topBG {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  background-color: #4172bb; }
+  #topBG #playTop {
+    width: 1160px;
+    height: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #topBG #playTop #playHbLogo {
+      float: left;
+      width: 244px;
+      height: 39px; }
+      #topBG #playTop #playHbLogo img {
+        width: 244px;
+        height: 39px; }
+    #topBG #playTop #playNav {
+      float: left;
+      width: auto;
+      margin-top: 9.5px;
+      margin-left: 30px; }
+      #topBG #playTop #playNav li {
+        height: 20px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid white; }
+        #topBG #playTop #playNav li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 20px; }
+      #topBG #playTop #playNav .last {
+        border: none;
+        padding-right: 0; }
+    #topBG #playTop #playSearch {
+      float: left;
+      height: 25px;
+      margin-top: 7px;
+      margin-left: 95px;
+      width: 200px;
+      background-color: white; }
+      #topBG #playTop #playSearch img {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        float: left; }
+      #topBG #playTop #playSearch input {
+        float: right;
+        margin-top: 2px;
+        width: 170px;
+        height: 21px;
+        margin-right: 3px;
+        border: none; }
+    #topBG #playTop #OAemail {
+      float: left;
+      height: 39px;
+      margin-left: 168px; }
+      #topBG #playTop #OAemail li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #3c6bb5;
+        border-left: 1px solid #3c6bb5; }
+        #topBG #playTop #OAemail li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 39px; }
+      #topBG #playTop #OAemail .last {
+        border-left: none; }
+
+body #main {
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding-bottom: 140px;
+  background-color: #033b62; }
+  body #main #zcInfo {
+    width: 1160px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    clear: both;
+    overflow: hidden;
+    overflow: visible;
+    margin-top: 36px; }
+    body #main #zcInfo #zcDesc {
+      width: 731px;
+      height: 205px;
+      float: left;
+      margin-top: 30px;
+      background-image: url(../img/zcpage-descBG.jpg); }
+      body #main #zcInfo #zcDesc .headPic {
+        width: 274px;
+        height: 241px;
+        float: left; }
+        body #main #zcInfo #zcDesc .headPic img {
+          width: 274px;
+          height: 241px;
+          position: relative;
+          top: -34px; }
+      body #main #zcInfo #zcDesc .txt {
+        float: right;
+        width: 450px;
+        margin-top: 10px; }
+        body #main #zcInfo #zcDesc .txt .title {
+          overflow: hidden; }
+          body #main #zcInfo #zcDesc .txt .title .name {
+            float: left; }
+            body #main #zcInfo #zcDesc .txt .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #369ce3;
+              font-size: 22px; }
+        body #main #zcInfo #zcDesc .txt .description {
+          clear: both;
+          margin-right: 20px;
+          margin-top: 25px;
+          overflow: hidden; }
+          body #main #zcInfo #zcDesc .txt .description p {
+            font-family: "Microsoft YaHei UI";
+            font-size: 14px;
+            line-height: 24px;
+            color: #369ce3;
+            text-indent: 2em; }
+        body #main #zcInfo #zcDesc .txt .detail {
+          clear: both;
+          float: right;
+          margin-right: 20px; }
+          body #main #zcInfo #zcDesc .txt .detail p {
+            font-family: "Microsoft YaHei UI";
+            font-size: 14px;
+            line-height: 24px;
+            color: #369ce3; }
+    body #main #zcInfo #zcAlbum {
+      width: 385px;
+      float: right; }
+      body #main #zcInfo #zcAlbum .title {
+        overflow: hidden;
+        margin-bottom: 8px; }
+        body #main #zcInfo #zcAlbum .title .name {
+          float: left; }
+          body #main #zcInfo #zcAlbum .title .name p {
+            font-family: "Microsoft YaHei UI";
+            color: white;
+            font-size: 18px; }
+      body #main #zcInfo #zcAlbum .pic .slider {
+        width: 385px;
+        height: 205px;
+        overflow: hidden; }
+        body #main #zcInfo #zcAlbum .pic .slider li img {
+          width: 385px;
+          height: 205px; }
+  body #main #share {
+    clear: both;
+    width: 220px;
+    height: 28px;
+    position: relative;
+    left: 50%;
+    margin-left: -110px; }
+    body #main #share .txt {
+      float: left; }
+      body #main #share .txt p {
+        font-size: 12px;
+        color: white;
+        line-height: 28px; }
+    body #main #share .shareBtn {
+      float: right; }
+  body #main #zcMisc {
+    width: 1160px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    clear: both;
+    overflow: hidden;
+    clear: both;
+    overflow: hidden; }
+    body #main #zcMisc #zcPhoto {
+      width: 731px;
+      height: 780px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      clear: both;
+      overflow: hidden;
+      float: left;
+      margin-top: 33px; }
+      body #main #zcMisc #zcPhoto img {
+        clear: both;
+        display: block;
+        width: 585px;
+        height: 780px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        clear: both;
+        overflow: hidden; }
+    body #main #zcMisc #rightSider {
+      float: right;
+      width: 385px; }
+      body #main #zcMisc #rightSider #lanmuIntr {
+        margin-bottom: 40px; }
+        body #main #zcMisc #rightSider #lanmuIntr .title {
+          overflow: hidden;
+          margin-bottom: 11px; }
+          body #main #zcMisc #rightSider #lanmuIntr .title .name {
+            float: left; }
+            body #main #zcMisc #rightSider #lanmuIntr .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: white;
+              font-size: 18px; }
+        body #main #zcMisc #rightSider #lanmuIntr img {
+          width: 385px;
+          height: 205px; }
+      body #main #zcMisc #rightSider #zcWeibo .title {
+        overflow: hidden;
+        margin-bottom: 11px; }
+        body #main #zcMisc #rightSider #zcWeibo .title .name {
+          float: left; }
+          body #main #zcMisc #rightSider #zcWeibo .title .name p {
+            font-family: "Microsoft YaHei UI";
+            color: white;
+            font-size: 18px; }
+      body #main #zcMisc #rightSider #zcWeibo .weibo {
+        width: 385px;
+        height: 503px; }
+
+#playBottom {
+  padding-top: 20px;
+  width: 100%;
+  height: 180px;
+  background-color: white; }
+
+/*# sourceMappingURL=zcpage.css.map */

@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@import "base";
+
+
+
+body {
+
+  #ADbanner {
+    @include contentSetup($contentWidth, 105px);
+    margin-top: 15px;
+    #leftAD {
+      width: 820px;
+      float: left;
+      img {
+        width: 820px;
+        height: 105px;
+      }
+    }
+    #rightAD {
+      width: 320px;
+      float: right;
+      img {
+        width: 320px;
+        height: 105px;
+      }
+    }
+  }
+
+  #main {
+    @include contentSetup($contentWidth, auto);
+    overflow: hidden;
+    clear: both;
+    display: block;
+    margin-bottom: 30px;
+    #mainLeft {
+      @include contentSetup(820px, auto);
+      float: left;
+      //页面路径
+      #pagePath {
+        margin-top: 20px;
+        height: 35px;
+        border-bottom: 1px solid #e5e5e5;
+        ul {
+          li {
+            float: left;
+            margin-right: 12px;
+            p {
+              font-size: 12px;
+              line-height: 35px;
+              color: #737373;
+            }
+          }
+        }
+      }
+    //  文章主体
+      #articleArea {
+        @include contentSetup(100%, auto);
+        margin-top: 25px;
+        .title {
+          .name {
+            width: 800px;
+            p {
+              font-size: 26px;
+              text-align: center;
+              font-family: "Microsoft YaHei UI";
+            }
+          }
+        }
+        .info {
+          margin-top: 20px;
+          height: 12px;
+          .date {
+            width: 49%;
+            float: left;
+            p {
+              font-size: 8px;
+              text-align: right;
+              color: #666666;
+            }
+          }
+          .source {
+            width: 49%;
+            float: right;
+            p {
+              font-size: 12px;
+              color: #666666;
+            }
+          }
+        }
+        .content {
+          margin-top: 20px;
+          p {
+            font-size: 14px;
+            color: #666666;
+            line-height: 22px;
+          }
+        }
+      }
+    //  共享
+      #shareArea {
+        float: right;
+        height: 30px;
+      }
+    //  相关新闻
+      #relatedNews {
+        @include contentSetup(100%, auto);
+        .title {
+          @include wtTitle();
+          height: 30px;
+          .name {
+            float: left;
+            width: auto;
+            p {
+              color: #006cad;
+              font-size: 15px;
+              font-weight: normal;
+            }
+          }
+        }
+        .content {
+          width: 570px;
+          ul {
+            li {
+              height: 24px;
+              p {
+                line-height: 24px;
+                font-size: 14px;
+                font-family: "Microsoft YaHei UI";
+                color: #666666;
+              }
+              .articleTitle {
+                width: 500px;
+                float: left;
+              }
+              .date {
+                width: 70px;
+                float: right;
+                p {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #mainRight {
+      $rightW: 320px;
+
+      //重载标题颜色
+      @mixin reloadNameColor($colorValue: #848484, $fontValue: "Microsoft YaHei UI") {
+        .name {
+          p {
+            color: $colorValue;
+            font-family: $fontValue;
+          }
+        }
+      }
+
+      @mixin rightLi {
+        width: $rightW;
+        height: 64px;
+        margin-bottom: 15px;
+        img {
+          width: 121px;
+          height: 64px;
+          float: left;
+        }
+        p {
+          float: right;
+          width: 190px;
+          font-size: 14px;
+          color: #7c7c7c;
+          line-height: 20px;
+        }
+        .details {
+          margin-top: 10px;
+          text-align: right;
+        }
+      }
+
+      @include contentSetup(320px, auto);
+      float: right;
+      //  热播节目
+      #hotPro {
+        @include  contentSetup($rightW, auto);
+        margin-top: 15px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+          .name {
+            width: 100%;
+            height: 30px;
+          }
+        }
+        .content {
+          //台前幕后列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+      //  热搜
+      #hotSearch {
+        @include  contentSetup($rightW, auto);
+        margin-top: 10px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+          .name {
+            width: 100%;
+            height: 30px;
+          }
+        }
+        .content {
+          //台前幕后列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+      //  淘宝广告
+      #tbAD {
+        margin-top: 22px;
+        width: $rightW;
+        height: 236px;
+        img {
+          width: $rightW;
+          height: 236px;
+        }
+      }
+    }
+  }
+}
+
+
+
+#articleBottom {
+  clear: both;
+  height: 300px;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 2px solid #398acc;
+  background-color: #f4f4f4;
+}

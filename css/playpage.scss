@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import "base.scss";
+
+img {
+  display: block;
+}
+
+body {
+
+
+  #main {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+    #playArea {
+      width: 100%;
+      height: 690px;
+      background-color: #191919;
+      #livePlayer {
+        padding-top: 10px;
+        @include contentSetup(1160px, 680px);
+        img {
+          width: 1160px;
+          height: 680px;
+          margin: 0;
+          margin: 0;
+        }
+      }
+    }
+    //频道动态
+    #channelDyc {
+      @include contentSetup($contentWidth, 180px);
+      .title {
+        @include wtTitle();
+        margin-top: 20px;
+        .name {
+          p {
+            color: #67a0fc;
+          }
+        }
+      }
+      .content {
+        li {
+          float: left;
+          width: 176.5px;
+          height: 141px;
+          margin-right: 20px;
+          img {
+            width: 176.5px;
+            height: 100px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 22px;
+            margin: 3px;
+          }
+        }
+        .last {
+          margin: 0;
+        }
+      }
+    }
+  //  频道栏目
+    #channelLanmu {
+      @extend #channelDyc;
+      height: 160px;
+    }
+  //  频道主持
+    #channelZhuchi {
+      clear: both;
+      height: auto;
+      @extend #channelDyc;
+      .content {
+        li {
+          height: 237px;
+          img {
+            height: 237px;
+          }
+        }
+      }
+    }
+  //  频道微博
+    #channelWeibo {
+
+    }
+  }
+
+//  播放页底部
+  #playBottom {
+    padding-top: 20px;
+    width: 100%;
+    height: 180px;
+    background-color: #3e3e3e;
+  }
+}

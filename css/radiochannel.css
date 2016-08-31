@@ -1,0 +1,760 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体; }
+
+html {
+  overflow-x: hidden; }
+
+#top {
+  width: 1160px;
+  height: 53px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  margin-top: 20px; }
+  #top #hbLogoA {
+    width: 437px;
+    height: 36px;
+    float: left; }
+  #top #search {
+    width: 227px;
+    height: 28px;
+    float: left;
+    margin-left: 220px;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius: 6px;
+    /* Gecko browsers */
+    -webkit-border-radius: 6px;
+    /* Webkit browsers */
+    border-radius: 6px;
+    /* W3C syntax */
+    margin-top: 5px; }
+    #top #search input {
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px;
+      width: 180px;
+      border: none;
+      height: 20px; }
+    #top #search img {
+      display: block;
+      margin-top: 5px;
+      float: right;
+      margin-right: 10px; }
+  #top #cjyAPP, #top #weixin {
+    width: 96px;
+    height: 41px;
+    float: left;
+    margin-left: 65px; }
+    #top #cjyAPP img, #top #weixin img {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 39px; }
+    #top #cjyAPP .name, #top #weixin .name {
+      float: right;
+      width: 45px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 5px; }
+      #top #cjyAPP .name p, #top #weixin .name p {
+        font-size: 13px; }
+  #top #weixin {
+    margin-left: 16px; }
+
+#nav {
+  width: 100%;
+  height: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #3d6bba; }
+  #nav ul {
+    width: 1160px;
+    height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    display: block; }
+    #nav ul li {
+      float: left;
+      display: block;
+      margin-right: 13px; }
+      #nav ul li p {
+        color: white;
+        font-size: 14px;
+        line-height: 36px;
+        font-family: "Microsoft YaHei UI Light"; }
+    #nav ul .OA {
+      margin-left: 90px;
+      margin-right: 14px;
+      border-right: 1px solid #2e56a6;
+      padding-right: 14px; }
+
+#footer, #playFooter {
+  width: 1160px;
+  height: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #footer #ourLink, #playFooter #ourLink {
+    padding-bottom: 20px;
+    width: 770px;
+    height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #ourLink li, #playFooter #ourLink li {
+      float: left;
+      width: 70px;
+      border-right: 1px solid; }
+      #footer #ourLink li p, #playFooter #ourLink li p {
+        font-size: 12px;
+        text-align: center; }
+    #footer #ourLink .last, #playFooter #ourLink .last {
+      border: none; }
+  #footer .hrLine, #playFooter .hrLine {
+    border-top: 1px solid #e0e0e0; }
+  #footer #info, #playFooter #info {
+    margin-top: 30px;
+    width: 750px;
+    height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 10px; }
+    #footer #info img, #playFooter #info img {
+      display: block;
+      width: 253px;
+      height: 65px;
+      float: left; }
+    #footer #info .infoTEXT, #playFooter #info .infoTEXT {
+      width: 460px;
+      float: right;
+      letter-spacing: 1px; }
+      #footer #info .infoTEXT p, #playFooter #info .infoTEXT p {
+        font-size: 12px;
+        line-height: 20px; }
+  #footer #wangjian, #playFooter #wangjian {
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 638px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #wangjian img, #playFooter #wangjian img {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+    #footer #wangjian .last, #playFooter #wangjian .last {
+      margin-right: 0px; }
+  #footer #beian, #playFooter #beian {
+    margin-top: 20px;
+    padding-right: 30px;
+    width: 250px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #beian img, #playFooter #beian img {
+      display: block;
+      float: left; }
+    #footer #beian p, #playFooter #beian p {
+      display: block;
+      font-size: 12px;
+      font-family: "Microsoft YaHei UI Light";
+      line-height: 25px;
+      float: left;
+      margin-left: 10px; }
+
+#playFooter {
+  height: 180px; }
+  #playFooter #ourLink li {
+    border-color: white; }
+    #playFooter #ourLink li p {
+      color: white; }
+  #playFooter #info img {
+    width: 251px;
+    height: 38px; }
+  #playFooter #info .infoTEXT p {
+    color: white; }
+
+#radioNav {
+  margin-top: 12px;
+  width: 1160px;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #radioNav .ch1 {
+    border-color: #05b4fb; }
+    #radioNav .ch1 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav .ch2 {
+    border-color: #d24a4a; }
+    #radioNav .ch2 .wxBanner {
+      background-color: #d24a4a; }
+  #radioNav .ch3 {
+    border-color: #92cf9a; }
+    #radioNav .ch3 .wxBanner {
+      background-color: #92cf9a; }
+  #radioNav .ch4 {
+    border-color: #efc703; }
+    #radioNav .ch4 .wxBanner {
+      background-color: #efc703; }
+  #radioNav .ch5 {
+    border-color: #7fcef4; }
+    #radioNav .ch5 .wxBanner {
+      background-color: #7fcef4; }
+  #radioNav .ch6 {
+    border-color: #a7509a; }
+    #radioNav .ch6 .wxBanner {
+      background-color: #a7509a; }
+  #radioNav .ch7 {
+    border-color: #e3e949; }
+    #radioNav .ch7 .wxBanner {
+      background-color: #e3e949; }
+  #radioNav .ch8 {
+    border-color: #86be0d; }
+    #radioNav .ch8 .wxBanner {
+      background-color: #86be0d; }
+  #radioNav .ch9 {
+    border-color: #de4700; }
+    #radioNav .ch9 .wxBanner {
+      background-color: #de4700; }
+  #radioNav .ch10 {
+    border-color: #05b4fb; }
+    #radioNav .ch10 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav li {
+    float: left;
+    width: 116px;
+    height: 30px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid; }
+    #radioNav li p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px; }
+
+#topBG {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  background-color: #4172bb; }
+  #topBG #playTop {
+    width: 1160px;
+    height: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #topBG #playTop #playHbLogo {
+      float: left;
+      width: 244px;
+      height: 39px; }
+      #topBG #playTop #playHbLogo img {
+        width: 244px;
+        height: 39px; }
+    #topBG #playTop #playNav {
+      float: left;
+      width: auto;
+      margin-top: 9.5px;
+      margin-left: 30px; }
+      #topBG #playTop #playNav li {
+        height: 20px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid white; }
+        #topBG #playTop #playNav li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 20px; }
+      #topBG #playTop #playNav .last {
+        border: none;
+        padding-right: 0; }
+    #topBG #playTop #playSearch {
+      float: left;
+      height: 25px;
+      margin-top: 7px;
+      margin-left: 95px;
+      width: 200px;
+      background-color: white; }
+      #topBG #playTop #playSearch img {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        float: left; }
+      #topBG #playTop #playSearch input {
+        float: right;
+        margin-top: 2px;
+        width: 170px;
+        height: 21px;
+        margin-right: 3px;
+        border: none; }
+    #topBG #playTop #OAemail {
+      float: left;
+      height: 39px;
+      margin-left: 168px; }
+      #topBG #playTop #OAemail li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #3c6bb5;
+        border-left: 1px solid #3c6bb5; }
+        #topBG #playTop #OAemail li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 39px; }
+      #topBG #playTop #OAemail .last {
+        border-left: none; }
+
+.banner {
+  background-image: url(../img/bannerBG.png); }
+
+body #main {
+  margin-top: 30px; }
+  body #main #mainChannelArea {
+    width: 1160px;
+    height: 820px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    body #main #mainChannelArea #radioChannelLive {
+      float: left;
+      width: 325px; }
+      body #main #mainChannelArea #radioChannelLive #radioLivePlayer {
+        height: 125px; }
+        body #main #mainChannelArea #radioChannelLive #radioLivePlayer img {
+          width: 325px;
+          height: 125px; }
+      body #main #mainChannelArea #radioChannelLive #radioLiveList .bl {
+        background-color: #b9e2f0; }
+      body #main #mainChannelArea #radioChannelLive #radioLiveList .gr {
+        background-color: #eeeeee; }
+      body #main #mainChannelArea #radioChannelLive #radioLiveList li {
+        height: 30px; }
+        body #main #mainChannelArea #radioChannelLive #radioLiveList li .playTime {
+          display: block;
+          width: 50%;
+          font-size: 10px;
+          line-height: 30px;
+          float: left;
+          text-align: right; }
+        body #main #mainChannelArea #radioChannelLive #radioLiveList li .playName {
+          display: block;
+          width: 45%;
+          font-size: 10px;
+          line-height: 30px;
+          float: right;
+          text-align: left; }
+      body #main #mainChannelArea #radioChannelLive #radioAD {
+        margin-top: 30px;
+        width: 100%;
+        height: 215px; }
+        body #main #mainChannelArea #radioChannelLive #radioAD img {
+          width: 100%;
+          height: 215px; }
+    body #main #mainChannelArea #radioChannelMidContent {
+      float: left;
+      width: 475px;
+      margin-left: 30px; }
+      body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo {
+        height: 313px;
+        background-image: url(../img/radio_info.png); }
+        body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title {
+          padding-top: 10px;
+          width: 455px;
+          margin-left: auto;
+          margin-right: auto;
+          height: 35px;
+          border-bottom: 1px solid #bfbfbf; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .name {
+            font-size: 18px;
+            height: 18px;
+            float: left;
+            font-weight: bold; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #5c5c5c; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .nav {
+            float: left;
+            margin-left: 40px;
+            margin-top: 5px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .nav li {
+              float: left;
+              font-size: 14px;
+              margin-right: 15px;
+              padding-right: 15px;
+              border-right: 1px solid; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .nav .last {
+              margin: 0;
+              padding: 0;
+              border: none; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .more {
+            float: right;
+            margin-top: 8px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .more p {
+              font-size: 14px; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch1 {
+            border-color: #05b4fb; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch1 .wxBanner {
+              background-color: #05b4fb; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch2 {
+            border-color: #d24a4a; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch2 .wxBanner {
+              background-color: #d24a4a; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch3 {
+            border-color: #92cf9a; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch3 .wxBanner {
+              background-color: #92cf9a; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch4 {
+            border-color: #efc703; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch4 .wxBanner {
+              background-color: #efc703; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch5 {
+            border-color: #7fcef4; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch5 .wxBanner {
+              background-color: #7fcef4; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch6 {
+            border-color: #a7509a; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch6 .wxBanner {
+              background-color: #a7509a; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch7 {
+            border-color: #e3e949; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch7 .wxBanner {
+              background-color: #e3e949; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch8 {
+            border-color: #86be0d; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch8 .wxBanner {
+              background-color: #86be0d; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch9 {
+            border-color: #de4700; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch9 .wxBanner {
+              background-color: #de4700; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch10 {
+            border-color: #05b4fb; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .ch10 .wxBanner {
+              background-color: #05b4fb; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .name {
+            width: 164px;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+            height: 30px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .name p {
+              text-align: center;
+              color: black; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .more {
+            margin-right: 10px;
+            float: right; }
+            body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .title .more p {
+              font-size: 8px;
+              color: #ce3a3a;
+              font-family: "Microsoft YaHei UI";
+              font-weight: bold; }
+        body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .content {
+          margin: 10px; }
+          body #main #mainChannelArea #radioChannelMidContent #radioChannelInfo .content p {
+            font-size: 14px;
+            line-height: 25px;
+            text-indent: 2em; }
+      body #main #mainChannelArea #radioChannelMidContent #radioFocus {
+        height: 480px; }
+        body #main #mainChannelArea #radioChannelMidContent #radioFocus .title {
+          height: 35px; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .name {
+            font-size: 18px;
+            height: 18px;
+            float: left;
+            font-weight: bold; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #5c5c5c; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .nav {
+            float: left;
+            margin-left: 40px;
+            margin-top: 5px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .nav li {
+              float: left;
+              font-size: 14px;
+              margin-right: 15px;
+              padding-right: 15px;
+              border-right: 1px solid; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .nav .last {
+              margin: 0;
+              padding: 0;
+              border: none; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .more {
+            float: right;
+            margin-top: 8px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .more p {
+              font-size: 14px; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .name {
+            height: 30px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .name p {
+              color: black; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .more {
+            margin-right: 20px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .title .more p {
+              font-size: 8px;
+              color: #ce3a3a;
+              font-family: "Microsoft YaHei UI";
+              font-weight: bold; }
+        body #main #mainChannelArea #radioChannelMidContent #radioFocus .content {
+          margin-top: 10px; }
+          body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li {
+            height: 85px;
+            padding-bottom: 17px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #d4d2d2; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li img {
+              float: left;
+              width: 150px;
+              height: 85px; }
+            body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li .txt {
+              width: 300px;
+              float: right;
+              margin-right: 10px; }
+              body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li .txt .title {
+                height: 20px; }
+                body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li .txt .title .name {
+                  height: 20px; }
+                  body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li .txt .title .name p {
+                    font-size: 15px;
+                    font-weight: normal; }
+              body #main #mainChannelArea #radioChannelMidContent #radioFocus .content li .txt .content p {
+                font-size: 12px;
+                color: #8a8a8a;
+                text-align: left;
+                text-indent: 0; }
+    body #main #mainChannelArea #radioChannelMisc {
+      float: left;
+      width: 300px;
+      margin-left: 30px; }
+      body #main #mainChannelArea #radioChannelMisc #WXmatrix {
+        height: 300px;
+        margin-top: 10px; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .title {
+          height: 35px; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .name {
+            font-size: 18px;
+            height: 18px;
+            float: left;
+            font-weight: bold; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #5c5c5c; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .nav {
+            float: left;
+            margin-left: 40px;
+            margin-top: 5px; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .nav li {
+              float: left;
+              font-size: 14px;
+              margin-right: 15px;
+              padding-right: 15px;
+              border-right: 1px solid; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .nav .last {
+              margin: 0;
+              padding: 0;
+              border: none; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .more {
+            float: right;
+            margin-top: 8px; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .more p {
+              font-size: 14px; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .name {
+            margin-left: 5px; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .title .name p {
+              color: black; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content li {
+          float: left;
+          width: 100px;
+          height: 115px;
+          margin-bottom: 10px; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content li img {
+            width: 90px;
+            height: 90px;
+            margin: 5px; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content li .wxBanner {
+            height: 20px; }
+            body #main #mainChannelArea #radioChannelMisc #WXmatrix .content li .wxBanner p {
+              text-align: center;
+              color: white;
+              font-size: 12px;
+              line-height: 20px; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch1 {
+          border-color: #05b4fb; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch1 .wxBanner {
+            background-color: #05b4fb; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch2 {
+          border-color: #d24a4a; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch2 .wxBanner {
+            background-color: #d24a4a; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch3 {
+          border-color: #92cf9a; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch3 .wxBanner {
+            background-color: #92cf9a; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch4 {
+          border-color: #efc703; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch4 .wxBanner {
+            background-color: #efc703; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch5 {
+          border-color: #7fcef4; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch5 .wxBanner {
+            background-color: #7fcef4; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch6 {
+          border-color: #a7509a; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch6 .wxBanner {
+            background-color: #a7509a; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch7 {
+          border-color: #e3e949; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch7 .wxBanner {
+            background-color: #e3e949; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch8 {
+          border-color: #86be0d; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch8 .wxBanner {
+            background-color: #86be0d; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch9 {
+          border-color: #de4700; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch9 .wxBanner {
+            background-color: #de4700; }
+        body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch10 {
+          border-color: #05b4fb; }
+          body #main #mainChannelArea #radioChannelMisc #WXmatrix .content .ch10 .wxBanner {
+            background-color: #05b4fb; }
+      body #main #mainChannelArea #radioChannelMisc #nowPlay {
+        height: 510px;
+        background-color: #f5f5f5; }
+        body #main #mainChannelArea #radioChannelMisc #nowPlay .title {
+          height: 35px;
+          padding-top: 10px;
+          height: 30px; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .title .name {
+            font-size: 18px;
+            height: 18px;
+            float: left;
+            font-weight: bold; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #5c5c5c; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .title .nav {
+            float: left;
+            margin-left: 40px;
+            margin-top: 5px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .nav li {
+              float: left;
+              font-size: 14px;
+              margin-right: 15px;
+              padding-right: 15px;
+              border-right: 1px solid; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .nav .last {
+              margin: 0;
+              padding: 0;
+              border: none; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .title .more {
+            float: right;
+            margin-top: 8px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .more p {
+              font-size: 14px; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .title .name {
+            margin-left: 30px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .name p {
+              color: black; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .title .more {
+            margin-right: 10px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .title .more p {
+              color: #d14444;
+              font-family: "Microsoft YaHei UI";
+              font-size: 10px; }
+        body #main #mainChannelArea #radioChannelMisc #nowPlay .content {
+          margin-top: 10px; }
+          body #main #mainChannelArea #radioChannelMisc #nowPlay .content li {
+            height: 40px;
+            margin-bottom: 5px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .content li p {
+              font-size: 13px;
+              line-height: 20px; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .content li .channelName {
+              width: 75px;
+              float: left;
+              margin-left: 30px; }
+              body #main #mainChannelArea #radioChannelMisc #nowPlay .content li .channelName p {
+                color: #d14444; }
+            body #main #mainChannelArea #radioChannelMisc #nowPlay .content li .playState {
+              width: 130px;
+              float: right;
+              margin-right: 50px; }
+  body #main #channelZhuchiArea {
+    margin-top: 30px;
+    width: 1160px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    body #main #channelZhuchiArea .content {
+      margin-top: 20px; }
+      body #main #channelZhuchiArea .content a {
+        display: block;
+        float: left; }
+      body #main #channelZhuchiArea .content .divmax {
+        width: 224px;
+        height: 103px;
+        display: inline;
+        margin-right: 10px;
+        float: left; }
+        body #main #channelZhuchiArea .content .divmax img {
+          width: 224px;
+          height: 216px; }
+        body #main #channelZhuchiArea .content .divmax .banner {
+          height: 25px;
+          position: relative;
+          top: -25px; }
+          body #main #channelZhuchiArea .content .divmax .banner p {
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            color: white; }
+      body #main #channelZhuchiArea .content .divmin {
+        width: 107px;
+        height: 103px;
+        display: inline;
+        margin-right: 10px;
+        float: left; }
+        body #main #channelZhuchiArea .content .divmin img {
+          width: 107px;
+          height: 103px; }
+        body #main #channelZhuchiArea .content .divmin .banner {
+          height: 25px;
+          position: relative;
+          top: -25px; }
+          body #main #channelZhuchiArea .content .divmin .banner p {
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            color: white; }
+      body #main #channelZhuchiArea .content .frame1 {
+        height: 103px;
+        margin-bottom: 10px;
+        display: block; }
+      body #main #channelZhuchiArea .content .last {
+        margin-right: 0px; }
+  body #main #weibo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto; }
+
+/*# sourceMappingURL=radiochannel.css.map */

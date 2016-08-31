@@ -1,0 +1,1127 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体; }
+
+html {
+  overflow-x: hidden; }
+
+#top {
+  width: 1160px;
+  height: 53px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  margin-top: 20px; }
+  #top #hbLogoA {
+    width: 437px;
+    height: 36px;
+    float: left; }
+  #top #search {
+    width: 227px;
+    height: 28px;
+    float: left;
+    margin-left: 220px;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius: 6px;
+    /* Gecko browsers */
+    -webkit-border-radius: 6px;
+    /* Webkit browsers */
+    border-radius: 6px;
+    /* W3C syntax */
+    margin-top: 5px; }
+    #top #search input {
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px;
+      width: 180px;
+      border: none;
+      height: 20px; }
+    #top #search img {
+      display: block;
+      margin-top: 5px;
+      float: right;
+      margin-right: 10px; }
+  #top #cjyAPP, #top #weixin {
+    width: 96px;
+    height: 41px;
+    float: left;
+    margin-left: 65px; }
+    #top #cjyAPP img, #top #weixin img {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 39px; }
+    #top #cjyAPP .name, #top #weixin .name {
+      float: right;
+      width: 45px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 5px; }
+      #top #cjyAPP .name p, #top #weixin .name p {
+        font-size: 13px; }
+  #top #weixin {
+    margin-left: 16px; }
+
+#nav {
+  width: 100%;
+  height: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #3d6bba; }
+  #nav ul {
+    width: 1160px;
+    height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    display: block; }
+    #nav ul li {
+      float: left;
+      display: block;
+      margin-right: 13px; }
+      #nav ul li p {
+        color: white;
+        font-size: 14px;
+        line-height: 36px;
+        font-family: "Microsoft YaHei UI Light"; }
+    #nav ul .OA {
+      margin-left: 90px;
+      margin-right: 14px;
+      border-right: 1px solid #2e56a6;
+      padding-right: 14px; }
+
+#footer, #playFooter {
+  width: 1160px;
+  height: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #footer #ourLink, #playFooter #ourLink {
+    padding-bottom: 20px;
+    width: 770px;
+    height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #ourLink li, #playFooter #ourLink li {
+      float: left;
+      width: 70px;
+      border-right: 1px solid; }
+      #footer #ourLink li p, #playFooter #ourLink li p {
+        font-size: 12px;
+        text-align: center; }
+    #footer #ourLink .last, #playFooter #ourLink .last {
+      border: none; }
+  #footer .hrLine, #playFooter .hrLine {
+    border-top: 1px solid #e0e0e0; }
+  #footer #info, #playFooter #info {
+    margin-top: 30px;
+    width: 750px;
+    height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 10px; }
+    #footer #info img, #playFooter #info img {
+      display: block;
+      width: 253px;
+      height: 65px;
+      float: left; }
+    #footer #info .infoTEXT, #playFooter #info .infoTEXT {
+      width: 460px;
+      float: right;
+      letter-spacing: 1px; }
+      #footer #info .infoTEXT p, #playFooter #info .infoTEXT p {
+        font-size: 12px;
+        line-height: 20px; }
+  #footer #wangjian, #playFooter #wangjian {
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 638px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #wangjian img, #playFooter #wangjian img {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+    #footer #wangjian .last, #playFooter #wangjian .last {
+      margin-right: 0px; }
+  #footer #beian, #playFooter #beian {
+    margin-top: 20px;
+    padding-right: 30px;
+    width: 250px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #beian img, #playFooter #beian img {
+      display: block;
+      float: left; }
+    #footer #beian p, #playFooter #beian p {
+      display: block;
+      font-size: 12px;
+      font-family: "Microsoft YaHei UI Light";
+      line-height: 25px;
+      float: left;
+      margin-left: 10px; }
+
+#playFooter {
+  height: 180px; }
+  #playFooter #ourLink li {
+    border-color: white; }
+    #playFooter #ourLink li p {
+      color: white; }
+  #playFooter #info img {
+    width: 251px;
+    height: 38px; }
+  #playFooter #info .infoTEXT p {
+    color: white; }
+
+#radioNav {
+  margin-top: 12px;
+  width: 1160px;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #radioNav .ch1 {
+    border-color: #05b4fb; }
+    #radioNav .ch1 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav .ch2 {
+    border-color: #d24a4a; }
+    #radioNav .ch2 .wxBanner {
+      background-color: #d24a4a; }
+  #radioNav .ch3 {
+    border-color: #92cf9a; }
+    #radioNav .ch3 .wxBanner {
+      background-color: #92cf9a; }
+  #radioNav .ch4 {
+    border-color: #efc703; }
+    #radioNav .ch4 .wxBanner {
+      background-color: #efc703; }
+  #radioNav .ch5 {
+    border-color: #7fcef4; }
+    #radioNav .ch5 .wxBanner {
+      background-color: #7fcef4; }
+  #radioNav .ch6 {
+    border-color: #a7509a; }
+    #radioNav .ch6 .wxBanner {
+      background-color: #a7509a; }
+  #radioNav .ch7 {
+    border-color: #e3e949; }
+    #radioNav .ch7 .wxBanner {
+      background-color: #e3e949; }
+  #radioNav .ch8 {
+    border-color: #86be0d; }
+    #radioNav .ch8 .wxBanner {
+      background-color: #86be0d; }
+  #radioNav .ch9 {
+    border-color: #de4700; }
+    #radioNav .ch9 .wxBanner {
+      background-color: #de4700; }
+  #radioNav .ch10 {
+    border-color: #05b4fb; }
+    #radioNav .ch10 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav li {
+    float: left;
+    width: 116px;
+    height: 30px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid; }
+    #radioNav li p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px; }
+
+#topBG {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  background-color: #4172bb; }
+  #topBG #playTop {
+    width: 1160px;
+    height: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #topBG #playTop #playHbLogo {
+      float: left;
+      width: 244px;
+      height: 39px; }
+      #topBG #playTop #playHbLogo img {
+        width: 244px;
+        height: 39px; }
+    #topBG #playTop #playNav {
+      float: left;
+      width: auto;
+      margin-top: 9.5px;
+      margin-left: 30px; }
+      #topBG #playTop #playNav li {
+        height: 20px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid white; }
+        #topBG #playTop #playNav li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 20px; }
+      #topBG #playTop #playNav .last {
+        border: none;
+        padding-right: 0; }
+    #topBG #playTop #playSearch {
+      float: left;
+      height: 25px;
+      margin-top: 7px;
+      margin-left: 95px;
+      width: 200px;
+      background-color: white; }
+      #topBG #playTop #playSearch img {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        float: left; }
+      #topBG #playTop #playSearch input {
+        float: right;
+        margin-top: 2px;
+        width: 170px;
+        height: 21px;
+        margin-right: 3px;
+        border: none; }
+    #topBG #playTop #OAemail {
+      float: left;
+      height: 39px;
+      margin-left: 168px; }
+      #topBG #playTop #OAemail li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #3c6bb5;
+        border-left: 1px solid #3c6bb5; }
+        #topBG #playTop #OAemail li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 39px; }
+      #topBG #playTop #OAemail .last {
+        border-left: none; }
+
+body {
+  width: 100%; }
+  body #main {
+    width: 100%;
+    height: 2300px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    body #main #cjy {
+      width: 100%;
+      height: 696px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      background-color: #e9e9e9; }
+      body #main #cjy #wtProNav {
+        width: 1160px;
+        height: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        padding-top: 20px;
+        border-bottom: 2px solid #939393;
+        padding-bottom: 4px; }
+        body #main #cjy #wtProNav ul {
+          margin-left: 6px; }
+          body #main #cjy #wtProNav ul li {
+            float: left;
+            width: 190px;
+            margin-right: 95px; }
+            body #main #cjy #wtProNav ul li p {
+              font-family: 宋体;
+              font-size: 12px;
+              color: #5c5c5c; }
+              body #main #cjy #wtProNav ul li p span {
+                font-size: 14px;
+                color: #3d6bba;
+                margin-right: 9px;
+                font-weight: bold; }
+      body #main #cjy .content {
+        padding-top: 12px; }
+        body #main #cjy .content #hotNews {
+          width: 1160px;
+          height: 360px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden; }
+          body #main #cjy .content #hotNews #hotFollow {
+            width: 565px;
+            height: 360px;
+            background-color: #dddddd;
+            float: left; }
+            body #main #cjy .content #hotNews #hotFollow .slider {
+              height: 316px;
+              overflow: hidden; }
+              body #main #cjy .content #hotNews #hotFollow .slider img {
+                width: 565px; }
+            body #main #cjy .content #hotNews #hotFollow .banner {
+              height: 44px; }
+              body #main #cjy .content #hotNews #hotFollow .banner p {
+                font-weight: bold;
+                line-height: 44px;
+                text-align: left;
+                text-indent: 15px; }
+                body #main #cjy .content #hotNews #hotFollow .banner p span {
+                  display: block;
+                  width: 100px;
+                  background-color: #3d6bba;
+                  float: left;
+                  color: white;
+                  text-align: center;
+                  text-indent: 0px; }
+          body #main #cjy .content #hotNews #hotList {
+            width: 565px;
+            float: right; }
+            body #main #cjy .content #hotNews #hotList .listContent {
+              background-color: #dddddd;
+              height: 100px;
+              border-bottom: 1px solid #3d6bba;
+              margin-bottom: 28px;
+              padding-left: 15px;
+              padding-right: 15px; }
+              body #main #cjy .content #hotNews #hotList .listContent .title {
+                width: 100%;
+                padding-top: 10px;
+                overflow: hidden;
+                font-size: 17px; }
+                body #main #cjy .content #hotNews #hotList .listContent .title .name {
+                  float: left; }
+                  body #main #cjy .content #hotNews #hotList .listContent .title .name p {
+                    font-family: "Microsoft YaHei UI";
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #323232; }
+                body #main #cjy .content #hotNews #hotList .listContent .title .more {
+                  float: right;
+                  font-size: 14px;
+                  margin-right: 20px; }
+              body #main #cjy .content #hotNews #hotList .listContent .content {
+                font-size: 12px;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                clear: both; }
+                body #main #cjy .content #hotNews #hotList .listContent .content ul {
+                  margin-top: 15px; }
+                  body #main #cjy .content #hotNews #hotList .listContent .content ul li {
+                    height: 12px;
+                    margin-bottom: 12px; }
+                    body #main #cjy .content #hotNews #hotList .listContent .content ul li p {
+                      text-align: center; }
+                    body #main #cjy .content #hotNews #hotList .listContent .content ul li .listLeft {
+                      float: left;
+                      width: 240px;
+                      border-right: 1px solid;
+                      padding-right: 20px; }
+                    body #main #cjy .content #hotNews #hotList .listContent .content ul li .listRight {
+                      width: 240px;
+                      float: left;
+                      padding-left: 20px; }
+                body #main #cjy .content #hotNews #hotList .listContent .content .desc {
+                  margin-top: 10px;
+                  width: 550px;
+                  line-height: 18px;
+                  text-indent: 2em; }
+        body #main #cjy .content #routineNews {
+          margin-top: 30px;
+          width: 1160px;
+          height: 230px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden; }
+          body #main #cjy .content #routineNews #fusionNews {
+            width: 565px;
+            height: 230px;
+            margin-right: auto;
+            margin-left: auto;
+            overflow: hidden;
+            float: left;
+            background-image: url(../img/fusionBg.jpg); }
+            body #main #cjy .content #routineNews #fusionNews .title {
+              width: 380px;
+              height: 35px;
+              padding-top: 14px;
+              padding-left: 14px;
+              border-bottom: 1px solid #3d6bba; }
+              body #main #cjy .content #routineNews #fusionNews .title .name {
+                width: 165px;
+                float: left; }
+                body #main #cjy .content #routineNews #fusionNews .title .name img {
+                  display: block;
+                  width: 51px;
+                  height: 22px;
+                  float: left; }
+                body #main #cjy .content #routineNews #fusionNews .title .name p {
+                  display: block;
+                  width: 90px;
+                  font-size: 16px;
+                  float: right;
+                  font-weight: bold;
+                  color: #4276cf; }
+              body #main #cjy .content #routineNews #fusionNews .title .more {
+                float: right; }
+                body #main #cjy .content #routineNews #fusionNews .title .more p {
+                  font-size: 14px; }
+            body #main #cjy .content #routineNews #fusionNews .content ul {
+              margin-left: 10px; }
+              body #main #cjy .content #routineNews #fusionNews .content ul li {
+                width: 380px;
+                height: 22px;
+                margin-bottom: 10px; }
+                body #main #cjy .content #routineNews #fusionNews .content ul li img {
+                  display: block;
+                  width: 22px;
+                  height: 22px;
+                  float: left; }
+                body #main #cjy .content #routineNews #fusionNews .content ul li p {
+                  padding-top: 2px;
+                  display: block;
+                  width: 348px;
+                  float: right;
+                  font-size: 14px;
+                  font-family: 宋体;
+                  line-height: 22px; }
+          body #main #cjy .content #routineNews #cjyNews {
+            width: 565px;
+            height: 230px;
+            margin-right: auto;
+            margin-left: auto;
+            overflow: hidden;
+            float: right;
+            background-image: url(../img/cjyNewsBg.jpg); }
+            body #main #cjy .content #routineNews #cjyNews .title {
+              width: 380px;
+              height: 35px;
+              padding-top: 14px;
+              padding-left: 14px;
+              border-bottom: 1px solid #3d6bba; }
+              body #main #cjy .content #routineNews #cjyNews .title .name {
+                width: 165px;
+                float: left; }
+                body #main #cjy .content #routineNews #cjyNews .title .name img {
+                  display: block;
+                  width: 85px;
+                  height: 27px;
+                  float: left; }
+              body #main #cjy .content #routineNews #cjyNews .title .more {
+                float: right; }
+                body #main #cjy .content #routineNews #cjyNews .title .more p {
+                  font-size: 14px; }
+            body #main #cjy .content #routineNews #cjyNews .content ul {
+              margin-left: 5px; }
+              body #main #cjy .content #routineNews #cjyNews .content ul li {
+                width: 400px;
+                height: 22px;
+                margin-bottom: 10px; }
+                body #main #cjy .content #routineNews #cjyNews .content ul li p {
+                  padding-top: 2px;
+                  display: block;
+                  width: 400px;
+                  font-size: 14px;
+                  font-family: 宋体;
+                  line-height: 22px; }
+    body #main #wt {
+      width: 1160px;
+      height: 1260px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      margin-top: 10px; }
+      body #main #wt #tvBc {
+        height: 313px; }
+        body #main #wt #tvBc .title {
+          height: 35px;
+          height: 35px; }
+          body #main #wt #tvBc .title .name {
+            font-size: 18px;
+            height: 18px;
+            float: left;
+            font-weight: bold; }
+            body #main #wt #tvBc .title .name p {
+              font-family: "Microsoft YaHei UI";
+              color: #5c5c5c; }
+          body #main #wt #tvBc .title .nav {
+            float: left;
+            margin-left: 40px;
+            margin-top: 5px; }
+            body #main #wt #tvBc .title .nav li {
+              float: left;
+              font-size: 14px;
+              margin-right: 15px;
+              padding-right: 15px;
+              border-right: 1px solid; }
+            body #main #wt #tvBc .title .nav .last {
+              margin: 0;
+              padding: 0;
+              border: none; }
+          body #main #wt #tvBc .title .more {
+            float: right;
+            margin-top: 8px; }
+            body #main #wt #tvBc .title .more p {
+              font-size: 14px; }
+          body #main #wt #tvBc .title .channelNav ul {
+            display: block;
+            width: 630px;
+            height: 16px;
+            float: right; }
+            body #main #wt #tvBc .title .channelNav ul li {
+              float: left;
+              margin-right: 8px; }
+              body #main #wt #tvBc .title .channelNav ul li :hover {
+                text-decoration: underline; }
+              body #main #wt #tvBc .title .channelNav ul li p {
+                font-size: 13px; }
+        body #main #wt #tvBc .content {
+          width: 1200px;
+          height: 268px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden;
+          margin-top: 5px; }
+          body #main #wt #tvBc .content li {
+            width: 266px;
+            height: 268px;
+            float: left;
+            margin-right: 29px;
+            border: 1px solid #d3d3d3;
+            background-color: #eeeeee;
+            position: relative; }
+            body #main #wt #tvBc .content li .show {
+              height: 226px; }
+              body #main #wt #tvBc .content li .show img {
+                display: block;
+                height: 150px;
+                width: 266px; }
+              body #main #wt #tvBc .content li .show p {
+                width: 227px;
+                height: 56px;
+                font-size: 12px;
+                line-height: 20px;
+                font-family: 宋体;
+                margin: 20px;
+                margin-top: 10px; }
+            body #main #wt #tvBc .content li .category {
+              margin-top: 5px;
+              width: 200px;
+              height: 26px;
+              margin-left: -100px;
+              border-top: 2px solid #8b8b8b;
+              position: absolute;
+              left: 50%; }
+              body #main #wt #tvBc .content li .category p {
+                text-align: center;
+                font-size: 14px;
+                color: #8b8b8b;
+                line-height: 26px; }
+      body #main #wt #zhuchi-iptv {
+        margin-top: 10px;
+        width: 100%;
+        height: 170px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden; }
+        body #main #wt #zhuchi-iptv #zhuchi {
+          width: 862px;
+          float: left; }
+          body #main #wt #zhuchi-iptv #zhuchi .title {
+            height: 35px; }
+            body #main #wt #zhuchi-iptv #zhuchi .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #zhuchi-iptv #zhuchi .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #zhuchi-iptv #zhuchi .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #zhuchi-iptv #zhuchi .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #zhuchi-iptv #zhuchi .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #zhuchi-iptv #zhuchi .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #zhuchi-iptv #zhuchi .title .more p {
+                font-size: 14px; }
+          body #main #wt #zhuchi-iptv #zhuchi .content {
+            height: 136px; }
+            body #main #wt #zhuchi-iptv #zhuchi .content li {
+              float: left;
+              margin-right: 29px;
+              height: 136px;
+              background-color: #f3f3f3; }
+              body #main #wt #zhuchi-iptv #zhuchi .content li img {
+                width: 169px;
+                height: 99px;
+                display: block; }
+              body #main #wt #zhuchi-iptv #zhuchi .content li p {
+                font-size: 14px;
+                text-align: center;
+                line-height: 37px; }
+            body #main #wt #zhuchi-iptv #zhuchi .content .first img {
+              width: 268px;
+              height: 99px;
+              display: block; }
+            body #main #wt #zhuchi-iptv #zhuchi .content .last {
+              margin-right: 0px; }
+        body #main #wt #zhuchi-iptv #iptv {
+          width: 268px;
+          float: right; }
+          body #main #wt #zhuchi-iptv #iptv .title {
+            height: 35px; }
+            body #main #wt #zhuchi-iptv #iptv .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #zhuchi-iptv #iptv .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #zhuchi-iptv #iptv .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #zhuchi-iptv #iptv .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #zhuchi-iptv #iptv .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #zhuchi-iptv #iptv .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #zhuchi-iptv #iptv .title .more p {
+                font-size: 14px; }
+          body #main #wt #zhuchi-iptv #iptv .content {
+            height: 136px;
+            background-color: #f3f3f3; }
+            body #main #wt #zhuchi-iptv #iptv .content img {
+              width: 268px;
+              height: 99px;
+              display: block; }
+            body #main #wt #zhuchi-iptv #iptv .content p {
+              font-size: 14px;
+              text-align: center;
+              line-height: 37px; }
+      body #main #wt #hbtv-tvRcmd {
+        margin-top: 15px;
+        width: 100%;
+        height: 348px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden; }
+        body #main #wt #hbtv-tvRcmd #hbtv {
+          float: left;
+          width: 862px;
+          height: 348px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden; }
+          body #main #wt #hbtv-tvRcmd #hbtv .title {
+            height: 35px; }
+            body #main #wt #hbtv-tvRcmd #hbtv .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #hbtv-tvRcmd #hbtv .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #hbtv-tvRcmd #hbtv .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #hbtv-tvRcmd #hbtv .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #hbtv-tvRcmd #hbtv .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #hbtv-tvRcmd #hbtv .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #hbtv-tvRcmd #hbtv .title .more p {
+                font-size: 14px; }
+          body #main #wt #hbtv-tvRcmd #hbtv .content .topList {
+            width: 266px;
+            height: 311px;
+            float: left;
+            background-color: #f3f3f3;
+            border: 1px solid #e5e5e5;
+            margin-right: 29px; }
+            body #main #wt #hbtv-tvRcmd #hbtv .content .topList img {
+              width: inherit;
+              height: 152px; }
+            body #main #wt #hbtv-tvRcmd #hbtv .content .topList p {
+              font-size: 14px;
+              margin: 10px;
+              line-height: 20px; }
+          body #main #wt #hbtv-tvRcmd #hbtv .content .list {
+            width: 565px;
+            float: right; }
+            body #main #wt #hbtv-tvRcmd #hbtv .content .list li {
+              float: left;
+              margin-right: 29px;
+              margin-bottom: 17px;
+              height: 148px;
+              width: 169px;
+              overflow: hidden;
+              background-color: #f3f3f3; }
+              body #main #wt #hbtv-tvRcmd #hbtv .content .list li img {
+                width: 169px;
+                height: 99px;
+                display: block; }
+              body #main #wt #hbtv-tvRcmd #hbtv .content .list li p {
+                font-size: 12px;
+                line-height: 16px;
+                margin: 10px 5px 5px 5px; }
+            body #main #wt #hbtv-tvRcmd #hbtv .content .list .last {
+              margin-right: 0px; }
+        body #main #wt #hbtv-tvRcmd #tvRcmd {
+          width: 268px;
+          height: 348px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden;
+          float: right; }
+          body #main #wt #hbtv-tvRcmd #tvRcmd .title {
+            height: 35px; }
+            body #main #wt #hbtv-tvRcmd #tvRcmd .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #hbtv-tvRcmd #tvRcmd .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #hbtv-tvRcmd #tvRcmd .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #hbtv-tvRcmd #tvRcmd .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #hbtv-tvRcmd #tvRcmd .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #hbtv-tvRcmd #tvRcmd .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #hbtv-tvRcmd #tvRcmd .title .more p {
+                font-size: 14px; }
+          body #main #wt #hbtv-tvRcmd #tvRcmd .content li {
+            height: 65.5px;
+            background-color: #f3f3f3;
+            margin-bottom: 17px; }
+            body #main #wt #hbtv-tvRcmd #tvRcmd .content li img {
+              width: 125px;
+              height: 65.5px;
+              display: block;
+              float: left; }
+            body #main #wt #hbtv-tvRcmd #tvRcmd .content li p {
+              width: 130px;
+              float: right;
+              font-size: 14px;
+              margin: 5px; }
+      body #main #wt #hotTv-hotInfo {
+        width: 100%;
+        height: 348px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        margin-top: 15px; }
+        body #main #wt #hotTv-hotInfo #hotTv {
+          width: 862px;
+          height: 348px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden;
+          float: left; }
+          body #main #wt #hotTv-hotInfo #hotTv .title {
+            height: 35px; }
+            body #main #wt #hotTv-hotInfo #hotTv .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #hotTv-hotInfo #hotTv .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #hotTv-hotInfo #hotTv .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #hotTv-hotInfo #hotTv .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #hotTv-hotInfo #hotTv .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #hotTv-hotInfo #hotTv .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #hotTv-hotInfo #hotTv .title .more p {
+                font-size: 14px; }
+          body #main #wt #hotTv-hotInfo #hotTv .content {
+            width: 100%;
+            height: 313px;
+            margin-right: auto;
+            margin-left: auto;
+            overflow: hidden;
+            float: left; }
+            body #main #wt #hotTv-hotInfo #hotTv .content li {
+              float: left;
+              width: 169px;
+              height: 148px;
+              margin-right: 29px;
+              margin-bottom: 17px;
+              overflow: hidden; }
+              body #main #wt #hotTv-hotInfo #hotTv .content li img {
+                width: inherit;
+                height: 148px; }
+            body #main #wt #hotTv-hotInfo #hotTv .content .first {
+              width: 268px; }
+              body #main #wt #hotTv-hotInfo #hotTv .content .first img {
+                width: inherit; }
+            body #main #wt #hotTv-hotInfo #hotTv .content .last {
+              margin-right: 0px; }
+            body #main #wt #hotTv-hotInfo #hotTv .content .banner {
+              width: 100%;
+              height: 45px;
+              position: relative;
+              top: -45px;
+              background-image: url(../img/bannerBG.png);
+              background-repeat: repeat; }
+              body #main #wt #hotTv-hotInfo #hotTv .content .banner p {
+                font-size: 13px;
+                line-height: 18px;
+                padding-top: 3px;
+                margin: 2px;
+                color: #FFFFFF; }
+        body #main #wt #hotTv-hotInfo #hotInfo {
+          width: 268px;
+          height: 348px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden;
+          float: right; }
+          body #main #wt #hotTv-hotInfo #hotInfo .title {
+            height: 35px; }
+            body #main #wt #hotTv-hotInfo #hotInfo .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #wt #hotTv-hotInfo #hotInfo .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #wt #hotTv-hotInfo #hotInfo .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #wt #hotTv-hotInfo #hotInfo .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #wt #hotTv-hotInfo #hotInfo .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #wt #hotTv-hotInfo #hotInfo .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #wt #hotTv-hotInfo #hotInfo .title .more p {
+                font-size: 14px; }
+          body #main #wt #hotTv-hotInfo #hotInfo .content li {
+            height: 65.5px;
+            background-color: #f3f3f3;
+            margin-bottom: 17px; }
+            body #main #wt #hotTv-hotInfo #hotInfo .content li img {
+              width: 125px;
+              height: 65.5px;
+              display: block;
+              float: left; }
+            body #main #wt #hotTv-hotInfo #hotInfo .content li p {
+              width: 130px;
+              float: right;
+              font-size: 14px;
+              margin: 5px; }
+    body #main #hz-AD {
+      width: 1160px;
+      height: 185px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      margin-top: 15px; }
+      body #main #hz-AD #hz {
+        width: 892px;
+        height: 185px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        background-color: #f0eeee;
+        float: left; }
+        body #main #hz-AD #hz .hzTitle {
+          float: left;
+          width: 67px;
+          height: 185px;
+          background-color: #3d6bba;
+          position: relative; }
+          body #main #hz-AD #hz .hzTitle .name {
+            width: 24px;
+            margin-left: auto;
+            margin-right: auto; }
+            body #main #hz-AD #hz .hzTitle .name p {
+              color: white;
+              width: 24px;
+              font-size: 24px;
+              font-weight: bold; }
+          body #main #hz-AD #hz .hzTitle img {
+            position: absolute;
+            bottom: 0px; }
+        body #main #hz-AD #hz .content li {
+          float: left;
+          margin-left: 25px;
+          margin-top: 10px; }
+          body #main #hz-AD #hz .content li .title {
+            width: 100%;
+            clear: both;
+            background-color: transparent;
+            height: 35px; }
+            body #main #hz-AD #hz .content li .title .name {
+              font-size: 18px;
+              height: 18px;
+              float: left;
+              font-weight: bold; }
+              body #main #hz-AD #hz .content li .title .name p {
+                font-family: "Microsoft YaHei UI";
+                color: #5c5c5c; }
+            body #main #hz-AD #hz .content li .title .nav {
+              float: left;
+              margin-left: 40px;
+              margin-top: 5px; }
+              body #main #hz-AD #hz .content li .title .nav li {
+                float: left;
+                font-size: 14px;
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid; }
+              body #main #hz-AD #hz .content li .title .nav .last {
+                margin: 0;
+                padding: 0;
+                border: none; }
+            body #main #hz-AD #hz .content li .title .more {
+              float: right;
+              margin-top: 8px; }
+              body #main #hz-AD #hz .content li .title .more p {
+                font-size: 14px; }
+          body #main #hz-AD #hz .content li .content {
+            background-color: #727171; }
+            body #main #hz-AD #hz .content li .content img {
+              display: block; }
+            body #main #hz-AD #hz .content li .content p {
+              text-align: center;
+              line-height: 30px;
+              color: white; }
+      body #main #hz-AD #AD {
+        float: right;
+        width: 268px;
+        height: 185px; }
+    body #main #frLink {
+      margin-top: 25px;
+      width: 1160px;
+      height: 62px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden;
+      border: 2px solid #b8b8b8; }
+      body #main #frLink .title {
+        margin-top: 7px;
+        width: 64px;
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        border-right: 1px solid #b8b8b8;
+        float: left; }
+        body #main #frLink .title .name {
+          width: 41px;
+          height: 41px;
+          margin-right: auto;
+          margin-left: auto;
+          overflow: hidden; }
+          body #main #frLink .title .name p {
+            line-height: 24px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-family: "Microsoft YaHei UI";
+            text-align: center; }
+      body #main #frLink .content {
+        margin-top: 7px;
+        width: 1075px;
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        float: right; }
+        body #main #frLink .content li {
+          float: left;
+          margin-right: 14px; }
+          body #main #frLink .content li p {
+            line-height: 16px;
+            font-size: 12px;
+            color: #6c6c6c; }
+
+/*# sourceMappingURL=syys.css.map */

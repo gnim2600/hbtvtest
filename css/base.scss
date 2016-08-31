@@ -1,0 +1,440 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+$rootWidth: 1920px;
+$contentWidth: 1160px;
+
+@mixin contentSetup($w, $h) {
+  width: $w;
+  height: $h;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+@mixin setTopEle($w, $h) {
+  width: $w;
+  height: $h;
+  float: left;
+}
+
+//网台标题设定
+@mixin wtTitle {
+  height: 35px;
+  .name {
+    font-size: 18px;
+    height: 18px;
+    float: left;
+    font-weight: bold;
+    p {
+      font-family: "Microsoft YaHei UI";
+      color: #5c5c5c;
+    }
+  }
+
+  .nav {
+    float: left;
+    margin-left: 40px;
+    margin-top: 5px;
+    li {
+      float: left;
+      font-size: 14px;
+      margin-right: 15px;
+      padding-right: 15px;
+      border-right: 1px solid;
+    }
+
+    .last {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .more {
+    float: right;
+    margin-top: 8px;
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+//网台右侧边栏设定
+@mixin wtRightSide {
+  @include contentSetup(268px, 348px);
+  float: right;
+  .title {
+    @include wtTitle();
+  }
+  .content {
+    li {
+      height: 65.5px;
+      background-color: #f3f3f3;
+      margin-bottom: 17px;
+      img {
+        width: 125px;
+        height: 65.5px;
+        display: block;
+        float: left;
+      }
+      p {
+        width: 130px;
+        float: right;
+        font-size: 14px;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+//顶部样式
+#top {
+  @include contentSetup($contentWidth, 53px);
+  margin-top: 20px;
+  #hbLogoA {
+    @include setTopEle(437px, 36px);
+  }
+  #search {
+    @include setTopEle(227px, 28px);
+    margin-left: 220px;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius: 6px; /* Gecko browsers */
+    -webkit-border-radius: 6px; /* Webkit browsers */
+    border-radius: 6px; /* W3C syntax */
+    margin-top: 5px;
+    input {
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px;
+      width: 180px;
+      border: none;
+      height: 20px;
+    }
+    img {
+      display: block;
+      margin-top: 5px;
+      float: right;
+      margin-right: 10px;
+    }
+  }
+  #cjyAPP {
+    @include setTopEle(96px, 41px);
+    margin-left: 65px;
+    img {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 39px;
+    }
+    .name {
+      float: right;
+      width: 45px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 5px;
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+  #weixin {
+    @extend #cjyAPP;
+    margin-left: 16px;
+  }
+}
+//顶部导航
+#nav {
+  @include contentSetup(100%, 36px);
+  position: relative;
+  background-color: #3d6bba;
+  ul {
+    @include contentSetup($contentWidth, 36px);
+    display: block;
+    li {
+      float: left;
+      display: block;
+      margin-right: 13px;
+      p {
+        color: white;
+        font-size: 14px;
+
+        line-height: 36px;
+        font-family: "Microsoft YaHei UI Light";
+      }
+    }
+
+    .OA {
+      margin-left: 90px;
+      margin-right: 14px;
+      border-right: 1px solid #2e56a6;
+      padding-right: 14px;
+    }
+  }
+}
+//底部样式
+#footer {
+  @include contentSetup($contentWidth, 275px);
+  #ourLink {
+    padding-bottom: 20px;
+    @include contentSetup(770px, 16px);
+    li {
+      float: left;
+      width: 70px;
+      border-right: 1px solid;
+      p {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    .last {
+      border: none;
+    }
+  }
+
+  .hrLine {
+    border-top: 1px solid #e0e0e0;
+  }
+
+  #info {
+    margin-top: 30px;
+    @include contentSetup(750px, 65px);
+    padding-left: 10px;
+    img {
+      display: block;
+      width: 253px;
+      height: 65px;
+      float: left;
+    }
+    .infoTEXT {
+      width: 460px;
+      float: right;
+      letter-spacing: 1px;
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  #wangjian {
+    margin-top: 30px;
+    padding-right: 30px;
+    @include contentSetup(638px, 50px);
+    img {
+      display: block;
+      float: left;
+      margin-right: 20px;
+    }
+    .last {
+      margin-right: 0px;
+    }
+  }
+  #beian {
+    margin-top: 20px;
+    padding-right: 30px;
+    @include contentSetup(250px, 50px);
+    img {
+      display: block;
+      float: left;
+    }
+    p {
+      display: block;
+      font-size: 12px;
+      font-family: "Microsoft YaHei UI Light";
+      line-height: 25px;
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+//频道播出页底部样式
+#playFooter {
+  @extend #footer;
+  height: 180px;
+  #ourLink {
+    li {
+      border-color: white;
+      p {
+        color: white;
+      }
+    }
+  }
+  #info {
+    img {
+      width: 251px;
+      height: 38px;
+    }
+    .infoTEXT {
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+
+//设定频道相关颜色
+@mixin forColor($valColor) {
+  border-color: $valColor;
+  .wxBanner {
+    background-color: $valColor;
+  }
+}
+
+@mixin chSetColor {
+  .ch1 {
+    @include forColor(#05b4fb);
+  }
+  .ch2 {
+    @include forColor(#d24a4a);
+  }
+  .ch3 {
+    @include forColor(#92cf9a);
+  }
+  .ch4 {
+    @include forColor(#efc703);
+  }
+  .ch5 {
+    @include forColor(#7fcef4);
+  }
+  .ch6 {
+    @include forColor(#a7509a);
+  }
+  .ch7 {
+    @include forColor(#e3e949);
+  }
+  .ch8 {
+    @include forColor(#86be0d);
+  }
+  .ch9 {
+    @include forColor(#de4700);
+  }
+  .ch10 {
+    @include forColor(#05b4fb);
+  }
+}
+
+//广播页导航
+#radioNav {
+  margin-top: 12px;
+  @include contentSetup($contentWidth, 35px);
+  @include chSetColor();
+  li {
+    float: left;
+    width: 116px;
+    height: 30px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+//播出页通用页头
+#topBG {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  background-color: #4172bb;
+  #playTop {
+    @include contentSetup($contentWidth, 39px);
+    #playHbLogo {
+      float: left;
+      width: 244px;
+      height: 39px;
+      img {
+        width: 244px;
+        height: 39px;
+      }
+    }
+    #playNav {
+      float: left;
+      width: auto;
+
+      margin-top: 9.5px;
+      margin-left: 30px;
+      li {
+        height: 20px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid white;
+        p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 20px;
+        }
+      }
+      .last {
+        border: none;
+        padding-right: 0;
+      }
+    }
+    #playSearch {
+      float: left;
+      height: 25px;
+      margin-top: 7px;
+      margin-left: 95px;
+      width: 200px;
+      background-color: white;
+      img {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        float: left;
+      }
+      input {
+        float: right;
+        margin-top: 2px;
+        width: 170px;
+        height: 21px;
+        margin-right: 3px;
+        border: none;
+      }
+    }
+    #OAemail {
+      float: left;
+      height: 39px;
+      margin-left: 168px;
+      li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #3c6bb5;
+        border-left: 1px solid #3c6bb5;
+        p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 39px;
+        }
+      }
+      .last {
+        border-left: none;
+      }
+    }
+  }
+}
+
+
+
+

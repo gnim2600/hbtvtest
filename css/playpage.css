@@ -1,0 +1,414 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体; }
+
+html {
+  overflow-x: hidden; }
+
+#top {
+  width: 1160px;
+  height: 53px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  margin-top: 20px; }
+  #top #hbLogoA {
+    width: 437px;
+    height: 36px;
+    float: left; }
+  #top #search {
+    width: 227px;
+    height: 28px;
+    float: left;
+    margin-left: 220px;
+    border: 1px solid #aaaaaa;
+    -moz-border-radius: 6px;
+    /* Gecko browsers */
+    -webkit-border-radius: 6px;
+    /* Webkit browsers */
+    border-radius: 6px;
+    /* W3C syntax */
+    margin-top: 5px; }
+    #top #search input {
+      display: block;
+      margin-top: 4px;
+      float: left;
+      margin-left: 10px;
+      width: 180px;
+      border: none;
+      height: 20px; }
+    #top #search img {
+      display: block;
+      margin-top: 5px;
+      float: right;
+      margin-right: 10px; }
+  #top #cjyAPP, #top #weixin {
+    width: 96px;
+    height: 41px;
+    float: left;
+    margin-left: 65px; }
+    #top #cjyAPP img, #top #weixin img {
+      display: block;
+      float: left;
+      width: 39px;
+      height: 39px; }
+    #top #cjyAPP .name, #top #weixin .name {
+      float: right;
+      width: 45px;
+      height: 40px;
+      margin-top: 5px;
+      margin-left: 5px; }
+      #top #cjyAPP .name p, #top #weixin .name p {
+        font-size: 13px; }
+  #top #weixin {
+    margin-left: 16px; }
+
+#nav {
+  width: 100%;
+  height: 36px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #3d6bba; }
+  #nav ul {
+    width: 1160px;
+    height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    display: block; }
+    #nav ul li {
+      float: left;
+      display: block;
+      margin-right: 13px; }
+      #nav ul li p {
+        color: white;
+        font-size: 14px;
+        line-height: 36px;
+        font-family: "Microsoft YaHei UI Light"; }
+    #nav ul .OA {
+      margin-left: 90px;
+      margin-right: 14px;
+      border-right: 1px solid #2e56a6;
+      padding-right: 14px; }
+
+#footer, #playFooter {
+  width: 1160px;
+  height: 275px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #footer #ourLink, #playFooter #ourLink {
+    padding-bottom: 20px;
+    width: 770px;
+    height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #ourLink li, #playFooter #ourLink li {
+      float: left;
+      width: 70px;
+      border-right: 1px solid; }
+      #footer #ourLink li p, #playFooter #ourLink li p {
+        font-size: 12px;
+        text-align: center; }
+    #footer #ourLink .last, #playFooter #ourLink .last {
+      border: none; }
+  #footer .hrLine, #playFooter .hrLine {
+    border-top: 1px solid #e0e0e0; }
+  #footer #info, #playFooter #info {
+    margin-top: 30px;
+    width: 750px;
+    height: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    padding-left: 10px; }
+    #footer #info img, #playFooter #info img {
+      display: block;
+      width: 253px;
+      height: 65px;
+      float: left; }
+    #footer #info .infoTEXT, #playFooter #info .infoTEXT {
+      width: 460px;
+      float: right;
+      letter-spacing: 1px; }
+      #footer #info .infoTEXT p, #playFooter #info .infoTEXT p {
+        font-size: 12px;
+        line-height: 20px; }
+  #footer #wangjian, #playFooter #wangjian {
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 638px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #wangjian img, #playFooter #wangjian img {
+      display: block;
+      float: left;
+      margin-right: 20px; }
+    #footer #wangjian .last, #playFooter #wangjian .last {
+      margin-right: 0px; }
+  #footer #beian, #playFooter #beian {
+    margin-top: 20px;
+    padding-right: 30px;
+    width: 250px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #footer #beian img, #playFooter #beian img {
+      display: block;
+      float: left; }
+    #footer #beian p, #playFooter #beian p {
+      display: block;
+      font-size: 12px;
+      font-family: "Microsoft YaHei UI Light";
+      line-height: 25px;
+      float: left;
+      margin-left: 10px; }
+
+#playFooter {
+  height: 180px; }
+  #playFooter #ourLink li {
+    border-color: white; }
+    #playFooter #ourLink li p {
+      color: white; }
+  #playFooter #info img {
+    width: 251px;
+    height: 38px; }
+  #playFooter #info .infoTEXT p {
+    color: white; }
+
+#radioNav {
+  margin-top: 12px;
+  width: 1160px;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden; }
+  #radioNav .ch1 {
+    border-color: #05b4fb; }
+    #radioNav .ch1 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav .ch2 {
+    border-color: #d24a4a; }
+    #radioNav .ch2 .wxBanner {
+      background-color: #d24a4a; }
+  #radioNav .ch3 {
+    border-color: #92cf9a; }
+    #radioNav .ch3 .wxBanner {
+      background-color: #92cf9a; }
+  #radioNav .ch4 {
+    border-color: #efc703; }
+    #radioNav .ch4 .wxBanner {
+      background-color: #efc703; }
+  #radioNav .ch5 {
+    border-color: #7fcef4; }
+    #radioNav .ch5 .wxBanner {
+      background-color: #7fcef4; }
+  #radioNav .ch6 {
+    border-color: #a7509a; }
+    #radioNav .ch6 .wxBanner {
+      background-color: #a7509a; }
+  #radioNav .ch7 {
+    border-color: #e3e949; }
+    #radioNav .ch7 .wxBanner {
+      background-color: #e3e949; }
+  #radioNav .ch8 {
+    border-color: #86be0d; }
+    #radioNav .ch8 .wxBanner {
+      background-color: #86be0d; }
+  #radioNav .ch9 {
+    border-color: #de4700; }
+    #radioNav .ch9 .wxBanner {
+      background-color: #de4700; }
+  #radioNav .ch10 {
+    border-color: #05b4fb; }
+    #radioNav .ch10 .wxBanner {
+      background-color: #05b4fb; }
+  #radioNav li {
+    float: left;
+    width: 116px;
+    height: 30px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid; }
+    #radioNav li p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px; }
+
+#topBG {
+  position: relative;
+  width: 100%;
+  height: 39px;
+  background-color: #4172bb; }
+  #topBG #playTop {
+    width: 1160px;
+    height: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    #topBG #playTop #playHbLogo {
+      float: left;
+      width: 244px;
+      height: 39px; }
+      #topBG #playTop #playHbLogo img {
+        width: 244px;
+        height: 39px; }
+    #topBG #playTop #playNav {
+      float: left;
+      width: auto;
+      margin-top: 9.5px;
+      margin-left: 30px; }
+      #topBG #playTop #playNav li {
+        height: 20px;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid white; }
+        #topBG #playTop #playNav li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 20px; }
+      #topBG #playTop #playNav .last {
+        border: none;
+        padding-right: 0; }
+    #topBG #playTop #playSearch {
+      float: left;
+      height: 25px;
+      margin-top: 7px;
+      margin-left: 95px;
+      width: 200px;
+      background-color: white; }
+      #topBG #playTop #playSearch img {
+        margin-top: 3px;
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        float: left; }
+      #topBG #playTop #playSearch input {
+        float: right;
+        margin-top: 2px;
+        width: 170px;
+        height: 21px;
+        margin-right: 3px;
+        border: none; }
+    #topBG #playTop #OAemail {
+      float: left;
+      height: 39px;
+      margin-left: 168px; }
+      #topBG #playTop #OAemail li {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #3c6bb5;
+        border-left: 1px solid #3c6bb5; }
+        #topBG #playTop #OAemail li p {
+          font-size: 14px;
+          text-align: center;
+          color: white;
+          line-height: 39px; }
+      #topBG #playTop #OAemail .last {
+        border-left: none; }
+
+img {
+  display: block; }
+
+body #main {
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  body #main #playArea {
+    width: 100%;
+    height: 690px;
+    background-color: #191919; }
+    body #main #playArea #livePlayer {
+      padding-top: 10px;
+      width: 1160px;
+      height: 680px;
+      margin-right: auto;
+      margin-left: auto;
+      overflow: hidden; }
+      body #main #playArea #livePlayer img {
+        width: 1160px;
+        height: 680px;
+        margin: 0;
+        margin: 0; }
+  body #main #channelDyc, body #main #channelLanmu, body #main #channelZhuchi {
+    width: 1160px;
+    height: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden; }
+    body #main #channelDyc .title, body #main #channelLanmu .title, body #main #channelZhuchi .title {
+      height: 35px;
+      margin-top: 20px; }
+      body #main #channelDyc .title .name, body #main #channelLanmu .title .name, body #main #channelZhuchi .title .name {
+        font-size: 18px;
+        height: 18px;
+        float: left;
+        font-weight: bold; }
+        body #main #channelDyc .title .name p, body #main #channelLanmu .title .name p, body #main #channelZhuchi .title .name p {
+          font-family: "Microsoft YaHei UI";
+          color: #5c5c5c; }
+      body #main #channelDyc .title .nav, body #main #channelLanmu .title .nav, body #main #channelZhuchi .title .nav {
+        float: left;
+        margin-left: 40px;
+        margin-top: 5px; }
+        body #main #channelDyc .title .nav li, body #main #channelLanmu .title .nav li, body #main #channelZhuchi .title .nav li {
+          float: left;
+          font-size: 14px;
+          margin-right: 15px;
+          padding-right: 15px;
+          border-right: 1px solid; }
+        body #main #channelDyc .title .nav .last, body #main #channelLanmu .title .nav .last, body #main #channelZhuchi .title .nav .last {
+          margin: 0;
+          padding: 0;
+          border: none; }
+      body #main #channelDyc .title .more, body #main #channelLanmu .title .more, body #main #channelZhuchi .title .more {
+        float: right;
+        margin-top: 8px; }
+        body #main #channelDyc .title .more p, body #main #channelLanmu .title .more p, body #main #channelZhuchi .title .more p {
+          font-size: 14px; }
+      body #main #channelDyc .title .name p, body #main #channelLanmu .title .name p, body #main #channelZhuchi .title .name p {
+        color: #67a0fc; }
+    body #main #channelDyc .content li, body #main #channelLanmu .content li, body #main #channelZhuchi .content li {
+      float: left;
+      width: 176.5px;
+      height: 141px;
+      margin-right: 20px; }
+      body #main #channelDyc .content li img, body #main #channelLanmu .content li img, body #main #channelZhuchi .content li img {
+        width: 176.5px;
+        height: 100px; }
+      body #main #channelDyc .content li p, body #main #channelLanmu .content li p, body #main #channelZhuchi .content li p {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 3px; }
+    body #main #channelDyc .content .last, body #main #channelLanmu .content .last, body #main #channelZhuchi .content .last {
+      margin: 0; }
+  body #main #channelLanmu {
+    height: 160px; }
+  body #main #channelZhuchi {
+    clear: both;
+    height: auto; }
+    body #main #channelZhuchi .content li {
+      height: 237px; }
+      body #main #channelZhuchi .content li img {
+        height: 237px; }
+body #playBottom {
+  padding-top: 20px;
+  width: 100%;
+  height: 180px;
+  background-color: #3e3e3e; }
+
+/*# sourceMappingURL=playpage.css.map */

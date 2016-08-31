@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+@import "base.scss";
+
+$leftW: 820px;
+$rightW: 320px;
+$topAD_h: 105px;
+
+$mainTop: 15px;
+
+img {
+  display: block;
+}
+//重载标题颜色
+@mixin reloadNameColor($colorValue: #848484, $fontValue: "Microsoft YaHei UI") {
+  .name {
+    p {
+      color: $colorValue;
+      font-family: $fontValue;
+    }
+  }
+}
+
+@mixin rightLi {
+  width: $rightW;
+  height: 64px;
+  margin-bottom: 15px;
+  img {
+    width: 121px;
+    height: 64px;
+    float: left;
+  }
+  p {
+    float: right;
+    width: 190px;
+    font-size: 14px;
+    color: #7c7c7c;
+  }
+  .details {
+    margin-top: 10px;
+    text-align: right;
+  }
+}
+
+body {
+  #main {
+    margin-top: $mainTop;
+    @include contentSetup($contentWidth, auto);
+    margin-bottom: 30px;
+    #LM_left {
+
+      float: left;
+      width: $leftW;
+      //左侧顶部广告
+      .topAD {
+        @include contentSetup($leftW, $topAD_h);
+        img {
+          width: $leftW;
+          height: $topAD_h;
+        }
+      }
+    //  栏目列表
+      #lanmuList {
+        @include contentSetup($leftW, 1783px);
+        margin-top: 15px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+
+          .lanmuNav {
+            margin-top: 10px;
+            float: right;
+            li {
+              float: left;
+              border: none;
+              font-size: 12px;
+              margin-right: 10px;
+              padding: 0px;
+              p {
+                color: #7c7c7c;
+              }
+            }
+          }
+        }
+        .content {
+          margin-top: 5px;
+          li {
+            margin-bottom: 10px;
+            @include contentSetup($leftW, 330px);
+            .proTop {
+              width: 100%;
+              height: 170px;
+              img {
+                float: left;
+                width: 286px;
+                height: 161px;
+              }
+              .title {
+                @include wtTitle();
+                @include reloadNameColor(#67a0fc, 宋体);
+                width: 510px;
+                height: 170px;
+                float: right;
+                p {
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #67a0fc;
+                  span {
+                    font-size: 12px;
+                    color: #7c7c7c;
+                  }
+                }
+                .name {
+                  @include contentSetup(100%, 30px);
+                  float: none;
+                  p {
+                    font-size: 18px;
+                  }
+                }
+                //播出信息
+                .proInfo {
+                  @include contentSetup(100%, 20px);
+                  p {
+                    width: 50%;
+                    line-height: 20px;
+                    float: left;
+                  }
+                }
+                .desc {
+                  @include contentSetup(100%, 70px);
+                  p {
+                    width: inherit;
+                    span {
+                      display: block;
+                      width: 425px;
+                      float: right;
+                      margin-right: 14px;
+                    }
+                  }
+                }
+                .more {
+                  @include contentSetup(50px, 20px);
+                  float: right;
+                  p {
+                    color: #67a0fc;
+                  }
+                }
+              }
+            }
+            .content {
+              ul {
+                li {
+                  float: left;
+                  width: 190px;
+                  height: 150px;
+                  padding-right: 20px;
+                  :last-child {
+                    padding: 0px;
+                  }
+                  img {
+                    width: inherit;
+                    height: 106px;
+                  }
+                  p {
+                    font-size: 12px;
+                    margin-top: 5px;
+
+                  }
+                }
+                .last {
+                  padding: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    //  HBTV专区
+      #hbtvList {
+        @include contentSetup($leftW, auto);
+        margin-top: 15px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+        }
+        .content {
+          float: left;
+          margin-top: 5px;
+          li {
+            margin-bottom: 20px;
+            @include contentSetup(795px, 170px);
+            .proAbout {
+              width: 780px;
+              height: 170px;
+              border-bottom: 1px solid #dfdfdf;
+              img {
+                float: left;
+                width: 265px;
+                height: 150px;
+              }
+              .title {
+                @include wtTitle();
+                @include reloadNameColor(#67a0fc, 宋体);
+                margin-left: 20px;
+                width: 490px;
+                height: 150px;
+                float: right;
+                p {
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #67a0fc;
+                  span {
+                    font-size: 12px;
+                    color: #7c7c7c;
+                  }
+                }
+                .name {
+                  @include contentSetup(100%, 30px);
+                  float: none;
+                  p {
+                    font-size: 18px;
+                    font-family: "Microsoft YaHei UI Light";
+                    font-weight: normal;
+                  }
+                }
+                //播出信息
+                .date {
+                  color: #8d8d8d;
+                }
+
+                .desc {
+                  @include contentSetup(100%, 70px);
+                  p {
+                    width: inherit;
+                    color: #8d8d8d;
+                    font-size: 12px;
+                  }
+                }
+                .tags {
+                  margin-top: 10px;
+                  @include contentSetup(auto, 20px);
+                  li {
+                    width: auto;
+                    float: left;
+                    margin-right: 10px;
+                    p {
+                      color: #86a6ca;
+                      font-size: 11px;
+                    }
+                  }
+                }
+              }
+            }
+            .content {
+              ul {
+                li {
+                  float: left;
+                  width: 190px;
+                  height: 150px;
+                  padding-right: 20px;
+                  :last-child {
+                    padding: 0px;
+                  }
+                  img {
+                    width: inherit;
+                    height: 106px;
+                  }
+                  p {
+                    font-size: 12px;
+                    margin-top: 5px;
+
+                  }
+                }
+                .last {
+                  padding: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    //  页面索引
+      #pageIndex {
+        @include contentSetup($leftW, 30px);
+        ul {
+          @include contentSetup(646px, 30px);
+          li {
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin-right: 4px;
+            background-color: #bababa;
+            :hover {
+              background-color: #666666;
+            }
+            p {
+              text-align: center;
+              font-size: 10px;
+              line-height: 30px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    #LM_right {
+      float: right;
+      width: $rightW;
+      //右侧顶部广告
+      .topAD {
+        @include contentSetup($rightW, $topAD_h);
+        img {
+          width: $rightW;
+          height: $topAD_h;
+        }
+      }
+      //节目推荐
+      #proRcmd {
+        margin-top: $mainTop;
+        @include  contentSetup($rightW, 410px);
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+        }
+        .content {
+          .topPic {
+            @include  contentSetup($rightW, 135px);
+            img {
+              width: $rightW;
+              height: 106px;
+            }
+            p {
+              margin-top: 5px;
+              font-size: 14px;
+              text-align: center;
+            }
+
+          }
+          //推荐节目列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+    //  主持人
+      #zhuchi {
+        @include contentSetup($rightW, 185px);
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+        }
+        .content {
+          @include contentSetup($rightW, 149px);
+          li {
+            width: 97px;
+            float: left;
+            height: 149px;
+            margin-right: 14.5px;
+            img {
+              width: 97px;
+              height: 149px;
+            }
+            .banner {
+              height: 30px;
+              position: relative;
+              top: -30px;
+              background-image: url(../img/bannerBG.png);
+              background-repeat: repeat;
+              p {
+                line-height: 30px;
+                text-align: center;
+                color: white;
+              }
+            }
+          }
+          .last {
+            margin: 0px;
+          }
+        }
+      }
+    //  台前幕后
+      #tqmh {
+        @include  contentSetup($rightW, 280px);
+        margin-top: 10px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+          .name {
+            width: 100%;
+            height: 30px;
+          }
+        }
+        .content {
+          //台前幕后列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+    //  热播节目
+      #hotPro {
+        @include  contentSetup($rightW, auto);
+        margin-top: 10px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+          .name {
+            width: 100%;
+            height: 30px;
+          }
+        }
+        .content {
+          //台前幕后列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+
+    //  热搜
+      #hotSearch {
+        @include  contentSetup($rightW, auto);
+        margin-top: 10px;
+        .title {
+          @include wtTitle();
+          @include reloadNameColor();
+          width: 100%;
+          height: 30px;
+          .name {
+            width: 100%;
+            height: 30px;
+          }
+        }
+        .content {
+          //台前幕后列表
+          .list {
+            margin-top: 10px;
+            li {
+              @include rightLi();
+            }
+          }
+        }
+      }
+
+    //  淘宝广告
+      #tbAD {
+        margin-top: 22px;
+        width: $rightW;
+        height: 236px;
+        img {
+          width: $rightW;
+          height: 236px;
+        }
+      }
+    }
+  }
+
+  //底部方框
+
+  #lanmuBottom {
+    height: 300px;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 2px solid #398acc;
+    background-color: #f4f4f4;
+  }
+  //HBTV专区底部方框
+  #hbtvareaBottom {
+    @extend #lanmuBottom;
+  }
+}
+

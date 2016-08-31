@@ -1,0 +1,13 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-family: 宋体; }
+
+html {
+  overflow-x: hidden; }
+
+/*# sourceMappingURL=base.css.map */
