@@ -5,9 +5,12 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/syys.css">
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-<!--#include virtual="top.html"-->
+<div id="commTop">
+    <script>$('#commTop').load('./top.html')</script>
+</div>
 <div id="main">
     <!--长江云专区-->
     <div id="cjy">
@@ -649,6 +652,8 @@
     </div>
 </div>
 <!--页尾-->
-<!--#include file="footer.html"-->
+<div id="commFooter">
+    <script>$('#commFooter').load('./footer.html')</script>
+</div>
 </body>
 </html>
