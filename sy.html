@@ -653,7 +653,14 @@
 </div>
 <!--页尾-->
 <div id="commFooter">
-    <script>$('#commFooter').load('./footer.html')</script>
 </div>
+
+<script>
+    $(document).ready(function (){
+        $('#commTop').load('top.html');
+        $('#commFooter').load('footer.html');
+    });
+</script>
+
 </body>
 </html>
